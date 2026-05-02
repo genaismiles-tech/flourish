@@ -1,6 +1,7 @@
 import "dotenv/config";
 import cors from "cors";
 import express from "express";
+import fs from "fs";
 import multer from "multer";
 import path from "path";
 import { fileURLToPath } from "url";
@@ -108,6 +109,12 @@ const MOCK_DIAGNOSIS = {
 
 app.use(cors());
 app.use(express.json());
+
+// ── Request logger ────────────────────────────────────────────────────────────
+app.use((req, _res, next) => {
+  console.log(`→ ${req.method} ${req.path}`);
+  next();
+});
 
 function apiErrorMessage(err: unknown): string {
   if (err && typeof err === "object") {
@@ -313,10 +320,49 @@ app.get("/api/health", (_req, res) => {
 // ── Serve frontend in production ──────────────────────────────────────────────
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const clientDist = path.join(__dirname, "../../client/dist");
+
+console.log(`📁 Resolved clientDist: ${clientDist}`);
+if (fs.existsSync(clientDist)) {
+  console.log(`✅ clientDist exists — static files will be served`);
+  const indexPath = path.join(clientDist, "index.html");
+  console.log(`   index.html present: ${fs.existsSync(indexPath)}`);
+  try {
+    const entries = fs.readdirSync(clientDist);
+    console.log(`   Contents: ${entries.join(", ")}`);
+  } catch (e) {
+    console.error(`   Could not read clientDist:`, e);
+  }
+} else {
+  console.error(`❌ clientDist does NOT exist: ${clientDist}`);
+  console.error(`   __dirname resolved to: ${__dirname}`);
+  // Attempt fallback: look for client/dist relative to the process working directory
+  const cwdFallback = path.join(process.cwd(), "client/dist");
+  console.error(`   Trying cwd-based fallback: ${cwdFallback} — exists: ${fs.existsSync(cwdFallback)}`);
+}
+
 app.use(express.static(clientDist));
-app.get("*", (_req, res) => res.sendFile(path.join(clientDist, "index.html")));
+
+// Log 404s on static asset requests to aid debugging
+app.use((req, _res, next) => {
+  if (!req.path.startsWith("/api")) {
+    console.log(`[static 404] ${req.method} ${req.path}`);
+  }
+  next();
+});
+
+// SPA fallback — serve index.html for all non-API GET requests
+app.get(/^(?!\/api).*$/, (req, res) => {
+  const indexPath = path.join(clientDist, "index.html");
+  console.log(`[spa fallback] ${req.path} → ${indexPath}`);
+  res.sendFile(indexPath, (err) => {
+    if (err) {
+      console.error(`[spa fallback] sendFile error for ${indexPath}:`, err);
+      res.status(500).send("Frontend not available");
+    }
+  });
+});
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
-  console.log(`Flourish server running on http://localhost:${PORT}`);
+  console.log(`🌿 Flourish server running on http://localhost:${PORT}`);
 });
