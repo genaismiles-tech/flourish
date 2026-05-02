@@ -24,7 +24,7 @@ export async function identifyPlants(
   }
 
   const form = new FormData();
-  form.append("images", new Blob([imageBuffer], { type: mimeType }), "plant.jpg");
+  form.append("images", new Blob([new Uint8Array(imageBuffer)], { type: mimeType }), "plant.jpg");
   form.append("organs", "auto");
 
   const url =

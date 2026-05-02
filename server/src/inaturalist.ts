@@ -9,7 +9,7 @@ export async function identifyWithINat(imageBuffer: Buffer, mimeType: string): P
   const token = process.env.INATURALIST_API_TOKEN!;
 
   const form = new FormData();
-  form.append("image", new Blob([imageBuffer], { type: mimeType }), "plant.jpg");
+  form.append("image", new Blob([new Uint8Array(imageBuffer)], { type: mimeType }), "plant.jpg");
 
   const res = await fetch("https://api.inaturalist.org/v1/computervision/score_image", {
     method: "POST",
