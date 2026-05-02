@@ -1,0 +1,3254 @@
+[
+  {
+    "scientific_name": "Eschscholzia californica",
+    "common_name": "California Poppy",
+    "emoji": "🌼",
+    "category": "Flowers",
+    "care_level": "easy",
+    "description": "California's beloved native state flower bursts into brilliant orange-gold carpets each spring. Direct-sow seeds in fall for best results; it thrives on neglect and poor, dry soil. Self-seeds prolifically, returning year after year with almost no effort.",
+    "hardiness_zone_min": 6,
+    "hardiness_zone_max": 10,
+    "states": [
+      "CA",
+      "OR",
+      "WA",
+      "NV",
+      "AZ"
+    ],
+    "native_states": [
+      "CA"
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "mixed"
+    ],
+    "tags": [
+      "native",
+      "drought-tolerant",
+      "pollinator",
+      "self-seeding",
+      "wildflower"
+    ]
+  },
+  {
+    "scientific_name": "Bougainvillea spectabilis",
+    "common_name": "Bougainvillea",
+    "emoji": "🌺",
+    "category": "Vines",
+    "care_level": "easy",
+    "description": "A showstopping tropical vine that explodes with vivid magenta, orange, or white bracts throughout the warm season. Thrives in heat and full sun with minimal water once established — drought stress actually triggers more blooming. Perfect for covering fences, walls, and pergolas in warm CA climates.",
+    "hardiness_zone_min": 9,
+    "hardiness_zone_max": 11,
+    "states": [
+      "CA",
+      "TX",
+      "FL",
+      "AZ"
+    ],
+    "native_states": [],
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "mixed"
+    ],
+    "tags": [
+      "drought-tolerant",
+      "tropical",
+      "colorful",
+      "fast-growing"
+    ]
+  },
+  {
+    "scientific_name": "Strelitzia reginae",
+    "common_name": "Bird of Paradise",
+    "emoji": "🦜",
+    "category": "Tropicals",
+    "care_level": "moderate",
+    "description": "South Africa's most iconic bloom, with striking orange and blue flowers that resemble a tropical bird in flight. In Southern California it thrives outdoors year-round, producing exotic blooms on mature plants. Give it full sun, well-draining soil, and occasional deep watering for best flowering.",
+    "hardiness_zone_min": 10,
+    "hardiness_zone_max": 12,
+    "states": [
+      "CA",
+      "FL",
+      "HI"
+    ],
+    "native_states": [],
+    "seasons": [
+      "spring",
+      "summer",
+      "winter"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": false,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "balcony",
+      "mixed"
+    ],
+    "tags": [
+      "tropical",
+      "colorful",
+      "drought-tolerant",
+      "architectural"
+    ]
+  },
+  {
+    "scientific_name": "Agapanthus africanus",
+    "common_name": "Agapanthus",
+    "emoji": "💙",
+    "category": "Flowers",
+    "care_level": "easy",
+    "description": "Bold clusters of blue or white trumpet-shaped blooms rise dramatically above strappy evergreen foliage all summer long. Incredibly tough and drought-tolerant once established, it performs beautifully in coastal and inland CA gardens alike. Plant in drifts along borders or in large containers for maximum impact.",
+    "hardiness_zone_min": 9,
+    "hardiness_zone_max": 11,
+    "states": [
+      "CA",
+      "FL",
+      "OR"
+    ],
+    "native_states": [],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "balcony",
+      "mixed"
+    ],
+    "tags": [
+      "drought-tolerant",
+      "pollinator",
+      "deer-resistant",
+      "colorful"
+    ]
+  },
+  {
+    "scientific_name": "Ceanothus thyrsiflorus",
+    "common_name": "California Lilac",
+    "emoji": "🫐",
+    "category": "Shrubs",
+    "care_level": "easy",
+    "description": "One of California's most spectacular native shrubs, smothered in brilliant blue flower clusters each spring that absolutely buzz with native bees. Extremely drought-tolerant once established — avoid summer irrigation after the first year. Perfect for erosion control on slopes and low-water native gardens.",
+    "hardiness_zone_min": 8,
+    "hardiness_zone_max": 10,
+    "states": [
+      "CA",
+      "OR",
+      "WA"
+    ],
+    "native_states": [
+      "CA"
+    ],
+    "seasons": [
+      "spring"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "mixed"
+    ],
+    "tags": [
+      "native",
+      "drought-tolerant",
+      "pollinator",
+      "deer-resistant",
+      "erosion-control"
+    ]
+  },
+  {
+    "scientific_name": "Aloe vera",
+    "common_name": "Aloe Vera",
+    "emoji": "🌵",
+    "category": "Succulents",
+    "care_level": "easy",
+    "description": "The ultimate low-maintenance succulent with medicinal gel in its plump leaves — a first-aid plant for the garden. Thrives outdoors in CA and TX in full sun with excellent drainage, producing tall orange flower spikes that attract hummingbirds. Water deeply but infrequently; overwatering is its only real enemy.",
+    "hardiness_zone_min": 9,
+    "hardiness_zone_max": 11,
+    "states": [
+      "CA",
+      "TX",
+      "FL",
+      "AZ",
+      "NV"
+    ],
+    "native_states": [],
+    "seasons": [
+      "spring",
+      "summer",
+      "fall",
+      "winter"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "balcony",
+      "indoor",
+      "mixed"
+    ],
+    "tags": [
+      "drought-tolerant",
+      "medicinal",
+      "hummingbird",
+      "container-friendly"
+    ]
+  },
+  {
+    "scientific_name": "Citrus x meyeri",
+    "common_name": "Meyer Lemon",
+    "emoji": "🍋",
+    "category": "Fruits",
+    "care_level": "moderate",
+    "description": "The beloved Meyer lemon produces sweeter, thin-skinned fruits nearly year-round in warm CA climates — far superior to grocery store lemons. Grows beautifully in large containers on patios, making it perfect for urban gardens. Feed with citrus fertilizer in spring and summer, and protect from hard frost.",
+    "hardiness_zone_min": 9,
+    "hardiness_zone_max": 11,
+    "states": [
+      "CA",
+      "TX",
+      "FL",
+      "AZ"
+    ],
+    "native_states": [],
+    "seasons": [
+      "fall",
+      "winter",
+      "spring"
+    ],
+    "sun": "full-sun",
+    "water": "moderate",
+    "beginner_friendly": false,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "balcony",
+      "mixed"
+    ],
+    "tags": [
+      "edible",
+      "container-friendly",
+      "fragrant",
+      "productive"
+    ]
+  },
+  {
+    "scientific_name": "Crassula ovata",
+    "common_name": "Jade Plant",
+    "emoji": "🪴",
+    "category": "Succulents",
+    "care_level": "easy",
+    "description": "A long-lived, sculptural succulent that can grow into a striking small tree in frost-free CA gardens. Its glossy, coin-shaped leaves and architectural branching structure make it beautiful year-round, with clusters of small white flowers in winter. Nearly indestructible — tolerates neglect, drought, and a wide range of conditions.",
+    "hardiness_zone_min": 10,
+    "hardiness_zone_max": 12,
+    "states": [
+      "CA",
+      "FL",
+      "HI"
+    ],
+    "native_states": [],
+    "seasons": [
+      "spring",
+      "summer",
+      "fall",
+      "winter"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "balcony",
+      "indoor",
+      "mixed"
+    ],
+    "tags": [
+      "drought-tolerant",
+      "architectural",
+      "container-friendly",
+      "long-lived"
+    ]
+  },
+  {
+    "scientific_name": "Aeonium arboreum",
+    "common_name": "Aeonium",
+    "emoji": "🌿",
+    "category": "Succulents",
+    "care_level": "easy",
+    "description": "Striking rosette succulents with flat, geometric flower-like heads in shades from chartreuse to deep purple-black. They're unusually winter-active, growing through cool CA winters and going dormant in summer heat — a perfect low-water choice for coastal and mild inland gardens. Their sculptural form adds dramatic architecture to any planting.",
+    "hardiness_zone_min": 9,
+    "hardiness_zone_max": 11,
+    "states": [
+      "CA",
+      "OR",
+      "FL"
+    ],
+    "native_states": [],
+    "seasons": [
+      "fall",
+      "winter",
+      "spring"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "balcony",
+      "mixed"
+    ],
+    "tags": [
+      "drought-tolerant",
+      "architectural",
+      "colorful",
+      "container-friendly"
+    ]
+  },
+  {
+    "scientific_name": "Echeveria elegans",
+    "common_name": "Echeveria",
+    "emoji": "🌸",
+    "category": "Succulents",
+    "care_level": "easy",
+    "description": "These jewel-like rosette succulents in shades of silvery-blue, pink, and purple are among the most beautiful and easy-to-grow plants for CA gardens. They multiply freely by offsets, flower attractively in spring, and look stunning in arrangements or mixed succulent beds. Require bright sun, sharp drainage, and minimal water.",
+    "hardiness_zone_min": 9,
+    "hardiness_zone_max": 11,
+    "states": [
+      "CA",
+      "TX",
+      "FL",
+      "AZ"
+    ],
+    "native_states": [],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "balcony",
+      "mixed"
+    ],
+    "tags": [
+      "drought-tolerant",
+      "colorful",
+      "container-friendly",
+      "architectural"
+    ]
+  },
+  {
+    "scientific_name": "Agave americana",
+    "common_name": "Century Plant",
+    "emoji": "🌵",
+    "category": "Succulents",
+    "care_level": "easy",
+    "description": "An iconic architectural succulent with bold, blue-gray spiky rosettes that can grow 6 feet across — a stunning statement plant for hot, dry gardens. Virtually indestructible once established, tolerating extreme heat, drought, and poor soil. After many years it sends up a towering flower stalk up to 20 feet tall, then dies, leaving offsets behind.",
+    "hardiness_zone_min": 8,
+    "hardiness_zone_max": 11,
+    "states": [
+      "CA",
+      "TX",
+      "AZ",
+      "NM",
+      "FL"
+    ],
+    "native_states": [],
+    "seasons": [
+      "spring",
+      "summer",
+      "fall",
+      "winter"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "mixed"
+    ],
+    "tags": [
+      "drought-tolerant",
+      "architectural",
+      "deer-resistant",
+      "low-maintenance"
+    ]
+  },
+  {
+    "scientific_name": "Quercus agrifolia",
+    "common_name": "Coast Live Oak",
+    "emoji": "🌳",
+    "category": "Trees",
+    "care_level": "moderate",
+    "description": "California's magnificent native oak is the backbone of the California landscape, providing irreplaceable habitat for hundreds of wildlife species. Once established it needs no supplemental summer water and lives for centuries. Give it ample space, avoid disturbing roots, and never irrigate within the drip line in summer.",
+    "hardiness_zone_min": 9,
+    "hardiness_zone_max": 11,
+    "states": [
+      "CA"
+    ],
+    "native_states": [
+      "CA"
+    ],
+    "seasons": [
+      "spring",
+      "summer",
+      "fall",
+      "winter"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": false,
+    "garden_types": [
+      "backyard",
+      "front-yard"
+    ],
+    "tags": [
+      "native",
+      "drought-tolerant",
+      "wildlife-habitat",
+      "shade-tree",
+      "long-lived"
+    ]
+  },
+  {
+    "scientific_name": "Cercis occidentalis",
+    "common_name": "Western Redbud",
+    "emoji": "🌸",
+    "category": "Trees",
+    "care_level": "moderate",
+    "description": "One of California's most spectacular native small trees, erupting in brilliant magenta-pink flowers directly on bare branches in late winter before the leaves emerge. The heart-shaped foliage turns rich red and gold in fall. Drought-tolerant, deer-resistant, and stunning in all four seasons — a perfect focal tree for a native garden.",
+    "hardiness_zone_min": 6,
+    "hardiness_zone_max": 9,
+    "states": [
+      "CA",
+      "OR",
+      "NV",
+      "UT"
+    ],
+    "native_states": [
+      "CA"
+    ],
+    "seasons": [
+      "winter",
+      "spring",
+      "fall"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": false,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "mixed"
+    ],
+    "tags": [
+      "native",
+      "drought-tolerant",
+      "deer-resistant",
+      "colorful",
+      "four-season"
+    ]
+  },
+  {
+    "scientific_name": "Salvia clevelandii",
+    "common_name": "Cleveland Sage",
+    "emoji": "💜",
+    "category": "Herbs",
+    "care_level": "easy",
+    "description": "Perhaps the most intensely fragrant of all California native sages, with whorls of blue-purple flowers that attract masses of bees, butterflies, and hummingbirds. This silvery-leaved shrub is extremely drought-tolerant and thrives in poor, dry soil — water only occasionally in summer. Crushing a leaf releases an unforgettably clean, piney fragrance.",
+    "hardiness_zone_min": 8,
+    "hardiness_zone_max": 10,
+    "states": [
+      "CA",
+      "AZ"
+    ],
+    "native_states": [
+      "CA"
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "mixed"
+    ],
+    "tags": [
+      "native",
+      "drought-tolerant",
+      "fragrant",
+      "pollinator",
+      "deer-resistant",
+      "hummingbird"
+    ]
+  },
+  {
+    "scientific_name": "Romneya coulteri",
+    "common_name": "Matilija Poppy",
+    "emoji": "🤍",
+    "category": "Flowers",
+    "care_level": "moderate",
+    "description": "California's queen of native flowers, producing enormous dinner-plate blooms of crinkled white petals around a golden center, and growing to 8 feet tall. Once established it's deeply drought-tolerant and spreads aggressively by underground runners — give it room to roam. Cut it back hard after flowering to keep it tidy.",
+    "hardiness_zone_min": 8,
+    "hardiness_zone_max": 10,
+    "states": [
+      "CA"
+    ],
+    "native_states": [
+      "CA"
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": false,
+    "garden_types": [
+      "backyard",
+      "front-yard"
+    ],
+    "tags": [
+      "native",
+      "drought-tolerant",
+      "dramatic",
+      "wildflower"
+    ]
+  },
+  {
+    "scientific_name": "Heteromeles arbutifolia",
+    "common_name": "Toyon",
+    "emoji": "🍒",
+    "category": "Shrubs",
+    "care_level": "easy",
+    "description": "The native shrub that gave Hollywood its name, bearing clusters of bright red berries through winter that feed cedar waxwings, robins, and mockingbirds. White flowers bloom in summer attracting pollinators, then transform into festive winter berries. Completely drought-tolerant once established, deer-resistant, and evergreen.",
+    "hardiness_zone_min": 7,
+    "hardiness_zone_max": 10,
+    "states": [
+      "CA"
+    ],
+    "native_states": [
+      "CA"
+    ],
+    "seasons": [
+      "summer",
+      "fall",
+      "winter"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "mixed"
+    ],
+    "tags": [
+      "native",
+      "drought-tolerant",
+      "wildlife-habitat",
+      "deer-resistant",
+      "berries"
+    ]
+  },
+  {
+    "scientific_name": "Salvia spathacea",
+    "common_name": "Hummingbird Sage",
+    "emoji": "🦅",
+    "category": "Herbs",
+    "care_level": "easy",
+    "description": "A bold, ground-covering native sage that absolutely magnetizes hummingbirds with its tall wands of deep magenta-red flowers in spring. It spreads by underground runners to create a lush, weed-suppressing groundcover under oaks and in dry shade — one of the few plants that thrives in California's challenging dry shade. Richly fragrant when brushed.",
+    "hardiness_zone_min": 8,
+    "hardiness_zone_max": 10,
+    "states": [
+      "CA"
+    ],
+    "native_states": [
+      "CA"
+    ],
+    "seasons": [
+      "spring"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "mixed"
+    ],
+    "tags": [
+      "native",
+      "drought-tolerant",
+      "hummingbird",
+      "fragrant",
+      "groundcover"
+    ]
+  },
+  {
+    "scientific_name": "Arctostaphylos manzanita",
+    "common_name": "Manzanita",
+    "emoji": "🌺",
+    "category": "Shrubs",
+    "care_level": "moderate",
+    "description": "California's most architecturally stunning native shrub, with polished mahogany-red bark, intricate branching, and clusters of pink urn-shaped flowers beloved by hummingbirds in late winter. Once established it requires zero summer water and thrives in rocky, poor soil. A centerpiece plant for a drought-tolerant native garden.",
+    "hardiness_zone_min": 7,
+    "hardiness_zone_max": 10,
+    "states": [
+      "CA",
+      "OR"
+    ],
+    "native_states": [
+      "CA"
+    ],
+    "seasons": [
+      "winter",
+      "spring"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": false,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "mixed"
+    ],
+    "tags": [
+      "native",
+      "drought-tolerant",
+      "hummingbird",
+      "architectural",
+      "wildlife-habitat"
+    ]
+  },
+  {
+    "scientific_name": "Achillea millefolium",
+    "common_name": "Yarrow",
+    "emoji": "⭐",
+    "category": "Flowers",
+    "care_level": "easy",
+    "description": "A tough, spreading perennial with feathery, aromatic foliage and flat-topped flower clusters in white, yellow, pink, or red that bloom for months and attract a spectacular diversity of beneficial insects. Native to California and extremely drought-tolerant once established. Cut it back after flowering for a second flush; divide every few years to keep it vigorous.",
+    "hardiness_zone_min": 3,
+    "hardiness_zone_max": 9,
+    "states": [
+      "CA",
+      "TX",
+      "OR",
+      "WA",
+      "CO",
+      "UT",
+      "NV"
+    ],
+    "native_states": [
+      "CA"
+    ],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "mixed"
+    ],
+    "tags": [
+      "native",
+      "drought-tolerant",
+      "pollinator",
+      "deer-resistant",
+      "spreading"
+    ]
+  },
+  {
+    "scientific_name": "Opuntia ficus-indica",
+    "common_name": "Prickly Pear Cactus",
+    "emoji": "🌵",
+    "category": "Succulents",
+    "care_level": "easy",
+    "description": "A dramatic, sculptural cactus that produces beautiful yellow flowers followed by sweet edible red-purple fruits (tunas) that can be made into jam or eaten fresh. Thrives in full sun and virtually any well-drained soil with no supplemental water needed once established. Wear thick gloves when harvesting — the glochids are deceptively painful.",
+    "hardiness_zone_min": 9,
+    "hardiness_zone_max": 11,
+    "states": [
+      "CA",
+      "TX",
+      "AZ",
+      "NM",
+      "NV"
+    ],
+    "native_states": [],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "mixed"
+    ],
+    "tags": [
+      "drought-tolerant",
+      "edible",
+      "architectural",
+      "wildlife-habitat"
+    ]
+  },
+  {
+    "scientific_name": "Cynara cardunculus var. scolymus",
+    "common_name": "Artichoke",
+    "emoji": "🥦",
+    "category": "Vegetables",
+    "care_level": "easy",
+    "description": "A stunning perennial vegetable that doubles as an architectural ornamental, with dramatic silver-gray foliage and thistly purple flowers if buds are left unharvested. Thrives in coastal and Central Valley CA, producing abundantly from spring through early summer. Harvest buds when tight; after several years divide the root clump to reinvigorate production.",
+    "hardiness_zone_min": 7,
+    "hardiness_zone_max": 11,
+    "states": [
+      "CA",
+      "OR",
+      "WA"
+    ],
+    "native_states": [],
+    "seasons": [
+      "spring"
+    ],
+    "sun": "full-sun",
+    "water": "moderate",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "mixed"
+    ],
+    "tags": [
+      "edible",
+      "architectural",
+      "perennial-vegetable",
+      "coastal"
+    ]
+  },
+  {
+    "scientific_name": "Persea americana",
+    "common_name": "Avocado",
+    "emoji": "🥑",
+    "category": "Fruits",
+    "care_level": "moderate",
+    "description": "The crown jewel of Southern California home orchards, producing creamy, buttery Hass avocados in abundance from a mature tree. Requires deep, infrequent watering, excellent drainage, and protection from frost and Santa Ana winds. Plant a Type A and Type B variety for best cross-pollination and a longer harvest window.",
+    "hardiness_zone_min": 10,
+    "hardiness_zone_max": 12,
+    "states": [
+      "CA",
+      "FL",
+      "HI"
+    ],
+    "native_states": [],
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "sun": "full-sun",
+    "water": "moderate",
+    "beginner_friendly": false,
+    "garden_types": [
+      "backyard",
+      "front-yard"
+    ],
+    "tags": [
+      "edible",
+      "productive",
+      "tropical"
+    ]
+  },
+  {
+    "scientific_name": "Aloysia citrodora",
+    "common_name": "Lemon Verbena",
+    "emoji": "🍋",
+    "category": "Herbs",
+    "care_level": "moderate",
+    "description": "The most intensely lemon-scented herb you can grow, with narrow leaves that release an extraordinary citrus fragrance when brushed — one of the best herbal teas and dessert flavorings available. Thrives in warm, sunny spots in CA and TX, dying back in cold winters but re-sprouting from the roots. Prune heavily in spring to keep it bushy.",
+    "hardiness_zone_min": 8,
+    "hardiness_zone_max": 11,
+    "states": [
+      "CA",
+      "TX",
+      "FL",
+      "AZ"
+    ],
+    "native_states": [],
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "sun": "full-sun",
+    "water": "moderate",
+    "beginner_friendly": false,
+    "garden_types": [
+      "backyard",
+      "balcony",
+      "mixed"
+    ],
+    "tags": [
+      "fragrant",
+      "edible",
+      "herbal-tea",
+      "container-friendly"
+    ]
+  },
+  {
+    "scientific_name": "Lupinus texensis",
+    "common_name": "Texas Bluebonnet",
+    "emoji": "💙",
+    "category": "Flowers",
+    "care_level": "easy",
+    "description": "Texas's beloved state flower carpets roadsides and meadows with stunning blue-purple spires each spring — one of the most iconic wildflower displays in North America. Sow seeds in fall (scarify them first for better germination) for spectacular spring blooms that return year after year. Leave seed pods to dry for natural reseeding.",
+    "hardiness_zone_min": 6,
+    "hardiness_zone_max": 9,
+    "states": [
+      "TX"
+    ],
+    "native_states": [
+      "TX"
+    ],
+    "seasons": [
+      "spring"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "mixed"
+    ],
+    "tags": [
+      "native",
+      "drought-tolerant",
+      "wildflower",
+      "pollinator",
+      "state-flower"
+    ]
+  },
+  {
+    "scientific_name": "Sophora secundiflora",
+    "common_name": "Texas Mountain Laurel",
+    "emoji": "💜",
+    "category": "Shrubs",
+    "care_level": "moderate",
+    "description": "A slow-growing but spectacular Texas native shrub covered in hanging clusters of intensely fragrant violet-blue flowers each spring — the fragrance resembles grape bubblegum and can be detected from 50 feet away. Extremely drought and heat tolerant once established, it thrives in rocky limestone soils. Pairs beautifully with Texas bluebonnets for a stunning native spring display.",
+    "hardiness_zone_min": 7,
+    "hardiness_zone_max": 10,
+    "states": [
+      "TX",
+      "NM"
+    ],
+    "native_states": [
+      "TX"
+    ],
+    "seasons": [
+      "spring"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": false,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "mixed"
+    ],
+    "tags": [
+      "native",
+      "drought-tolerant",
+      "fragrant",
+      "evergreen",
+      "deer-resistant"
+    ]
+  },
+  {
+    "scientific_name": "Melampodium leucanthum",
+    "common_name": "Blackfoot Daisy",
+    "emoji": "🌼",
+    "category": "Flowers",
+    "care_level": "easy",
+    "description": "A delightful native Texas wildflower that blooms nearly year-round in mild areas, producing masses of cheerful white and yellow daisy flowers with virtually no care. It thrives in rocky, alkaline soil and full sun, and actually blooms better with minimal water and fertilizer. Honeybees adore it, and it looks wonderful spilling over rock walls.",
+    "hardiness_zone_min": 5,
+    "hardiness_zone_max": 10,
+    "states": [
+      "TX",
+      "NM",
+      "AZ",
+      "CO"
+    ],
+    "native_states": [
+      "TX"
+    ],
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "mixed"
+    ],
+    "tags": [
+      "native",
+      "drought-tolerant",
+      "pollinator",
+      "long-blooming",
+      "wildflower"
+    ]
+  },
+  {
+    "scientific_name": "Gaillardia pulchella",
+    "common_name": "Indian Blanket",
+    "emoji": "🌻",
+    "category": "Flowers",
+    "care_level": "easy",
+    "description": "A fiery native wildflower with bold red and yellow daisy blooms that appear from late spring through fall, brightening roadsides and meadows across Texas. Extremely heat and drought tolerant, it thrives in poor, sandy or rocky soil and self-seeds prolifically. Plant in masses for a dramatic meadow effect, or mix with bluebonnets for a classic Texas wildflower display.",
+    "hardiness_zone_min": 3,
+    "hardiness_zone_max": 10,
+    "states": [
+      "TX",
+      "OK",
+      "KS",
+      "NM",
+      "CA"
+    ],
+    "native_states": [
+      "TX"
+    ],
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "mixed"
+    ],
+    "tags": [
+      "native",
+      "drought-tolerant",
+      "pollinator",
+      "wildflower",
+      "self-seeding"
+    ]
+  },
+  {
+    "scientific_name": "Leucophyllum frutescens",
+    "common_name": "Texas Sage",
+    "emoji": "💜",
+    "category": "Shrubs",
+    "care_level": "easy",
+    "description": "Called the 'barometer bush' because it bursts into bloom after rains, suddenly covered in stunning purple, pink, or white flowers. This tough native shrub tolerates extreme heat, drought, alkaline soil, and neglect — making it one of the most reliably beautiful plants in Texas landscapes. Silver-gray foliage provides year-round interest even between blooming cycles.",
+    "hardiness_zone_min": 7,
+    "hardiness_zone_max": 10,
+    "states": [
+      "TX",
+      "NM",
+      "AZ"
+    ],
+    "native_states": [
+      "TX"
+    ],
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "mixed"
+    ],
+    "tags": [
+      "native",
+      "drought-tolerant",
+      "deer-resistant",
+      "heat-tolerant",
+      "evergreen"
+    ]
+  },
+  {
+    "scientific_name": "Rudbeckia hirta",
+    "common_name": "Black-Eyed Susan",
+    "emoji": "🌻",
+    "category": "Flowers",
+    "care_level": "easy",
+    "description": "A cheerful, golden-rayed wildflower with a dark brown center that blooms prolifically through summer and fall, providing months of color with almost zero effort. Native across Texas, it thrives in average to poor soil and tolerates heat and drought once established. An important late-season nectar source for migrating butterflies and goldfinches that feast on the seed heads.",
+    "hardiness_zone_min": 3,
+    "hardiness_zone_max": 9,
+    "states": [
+      "TX",
+      "OK",
+      "KS",
+      "MO",
+      "CA",
+      "CO"
+    ],
+    "native_states": [
+      "TX"
+    ],
+    "seasons": [
+      "summer",
+      "fall"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "mixed"
+    ],
+    "tags": [
+      "native",
+      "drought-tolerant",
+      "pollinator",
+      "wildlife-habitat",
+      "long-blooming"
+    ]
+  },
+  {
+    "scientific_name": "Ratibida columnifera",
+    "common_name": "Mexican Hat",
+    "emoji": "🎩",
+    "category": "Flowers",
+    "care_level": "easy",
+    "description": "A whimsical prairie wildflower with distinctive drooping petals beneath a tall cylindrical brown seedhead that gives it a sombrero-like appearance. It blooms from late spring through fall in shades of yellow, maroon, and bicolor, thriving in hot, dry conditions and poor soil where many plants fail. Self-seeds freely to create naturalistic drifts; perfect for Texas wildflower meadows.",
+    "hardiness_zone_min": 4,
+    "hardiness_zone_max": 10,
+    "states": [
+      "TX",
+      "OK",
+      "KS",
+      "NM",
+      "CO"
+    ],
+    "native_states": [
+      "TX"
+    ],
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "mixed"
+    ],
+    "tags": [
+      "native",
+      "drought-tolerant",
+      "wildflower",
+      "pollinator",
+      "self-seeding"
+    ]
+  },
+  {
+    "scientific_name": "Malvaviscus arboreus var. drummondii",
+    "common_name": "Turk's Cap",
+    "emoji": "❤️",
+    "category": "Flowers",
+    "care_level": "easy",
+    "description": "A tough Texas native that blooms from summer through frost with curious twisted red flowers (hence the Turkish hat reference) that hummingbirds find irresistible. One of the best plants for shady spots in hot TX gardens, it tolerates poor soil, drought, heat, and even light foot traffic. The small red fruits are edible and the whole plant is deer resistant.",
+    "hardiness_zone_min": 7,
+    "hardiness_zone_max": 11,
+    "states": [
+      "TX",
+      "FL",
+      "LA"
+    ],
+    "native_states": [
+      "TX"
+    ],
+    "seasons": [
+      "summer",
+      "fall"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "mixed"
+    ],
+    "tags": [
+      "native",
+      "drought-tolerant",
+      "hummingbird",
+      "shade-tolerant",
+      "deer-resistant"
+    ]
+  },
+  {
+    "scientific_name": "Salvia greggii",
+    "common_name": "Autumn Sage",
+    "emoji": "🧡",
+    "category": "Herbs",
+    "care_level": "easy",
+    "description": "A workhorse Texas native sage that blooms almost continuously from spring through hard frost in red, pink, salmon, or white. Hummingbirds, butterflies, and bees compete for the nectar-rich flowers, making it a lively garden attraction. Cut it back by a third in spring to encourage compact, bushy growth and even better flowering.",
+    "hardiness_zone_min": 6,
+    "hardiness_zone_max": 9,
+    "states": [
+      "TX",
+      "NM",
+      "AZ",
+      "CA"
+    ],
+    "native_states": [
+      "TX"
+    ],
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "balcony",
+      "mixed"
+    ],
+    "tags": [
+      "native",
+      "drought-tolerant",
+      "hummingbird",
+      "pollinator",
+      "long-blooming",
+      "deer-resistant"
+    ]
+  },
+  {
+    "scientific_name": "Anisacanthus quadrifidus var. wrightii",
+    "common_name": "Flame Acanthus",
+    "emoji": "🔥",
+    "category": "Shrubs",
+    "care_level": "easy",
+    "description": "A spectacular Texas native with narrow, flaming orange-red tubular flowers that bloom heavily in summer and fall — a hummingbird magnet of the first order. Extremely tough and heat-tolerant, it thrives in rocky, alkaline Hill Country soil with minimal water. Cut it to the ground in late winter; it rebounds vigorously and produces its best flowers on new growth.",
+    "hardiness_zone_min": 7,
+    "hardiness_zone_max": 10,
+    "states": [
+      "TX",
+      "NM"
+    ],
+    "native_states": [
+      "TX"
+    ],
+    "seasons": [
+      "summer",
+      "fall"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "mixed"
+    ],
+    "tags": [
+      "native",
+      "drought-tolerant",
+      "hummingbird",
+      "heat-tolerant",
+      "deer-resistant"
+    ]
+  },
+  {
+    "scientific_name": "Hesperaloe parviflora",
+    "common_name": "Red Yucca",
+    "emoji": "🌺",
+    "category": "Succulents",
+    "care_level": "easy",
+    "description": "Despite the common name, Red Yucca is actually related to agaves — a grass-like Texas native with arching, strappy leaves and tall spikes of coral-red tubular flowers beloved by hummingbirds from spring through fall. Virtually indestructible in TX landscapes, thriving in extreme heat, drought, and poor rocky soil with zero supplemental water. A landscape staple with year-round presence.",
+    "hardiness_zone_min": 5,
+    "hardiness_zone_max": 11,
+    "states": [
+      "TX",
+      "NM",
+      "OK",
+      "AZ",
+      "CA"
+    ],
+    "native_states": [
+      "TX"
+    ],
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "mixed"
+    ],
+    "tags": [
+      "native",
+      "drought-tolerant",
+      "hummingbird",
+      "architectural",
+      "deer-resistant"
+    ]
+  },
+  {
+    "scientific_name": "Glandularia bipinnatifida",
+    "common_name": "Prairie Verbena",
+    "emoji": "💜",
+    "category": "Flowers",
+    "care_level": "easy",
+    "description": "A low-growing, spreading native wildflower that carpets sunny areas with clusters of rosy-purple blooms from spring through fall, functioning as a beautiful drought-tolerant groundcover. Thrives in rocky, well-drained soil and full sun with no supplemental irrigation. An important nectar source for native bees, skipper butterflies, and the spring azure butterfly.",
+    "hardiness_zone_min": 6,
+    "hardiness_zone_max": 10,
+    "states": [
+      "TX",
+      "OK",
+      "KS",
+      "NM"
+    ],
+    "native_states": [
+      "TX"
+    ],
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "mixed"
+    ],
+    "tags": [
+      "native",
+      "drought-tolerant",
+      "pollinator",
+      "groundcover",
+      "long-blooming"
+    ]
+  },
+  {
+    "scientific_name": "Tecoma stans",
+    "common_name": "Esperanza",
+    "emoji": "💛",
+    "category": "Shrubs",
+    "care_level": "moderate",
+    "description": "Known as 'hope' in Spanish, this exuberant shrub earns its name by blooming with bright yellow trumpet flowers from summer through the first frost, even in extreme Texas heat. Hummingbirds and butterflies are constant visitors to its prolific blooms. Freeze back in cold winters but reliably rebounds from the roots in spring — cut it back hard to encourage a fresh flush of growth.",
+    "hardiness_zone_min": 8,
+    "hardiness_zone_max": 11,
+    "states": [
+      "TX",
+      "AZ",
+      "FL",
+      "CA"
+    ],
+    "native_states": [],
+    "seasons": [
+      "summer",
+      "fall"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": false,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "mixed"
+    ],
+    "tags": [
+      "drought-tolerant",
+      "hummingbird",
+      "pollinator",
+      "heat-tolerant",
+      "long-blooming"
+    ]
+  },
+  {
+    "scientific_name": "Caesalpinia pulcherrima",
+    "common_name": "Pride of Barbados",
+    "emoji": "🌺",
+    "category": "Shrubs",
+    "care_level": "moderate",
+    "description": "A showstopper tropical shrub with brilliantly colored clusters of red, orange, and yellow flowers adorned with long red stamens, blooming all summer through fall. One of the most heat-tolerant flowering plants available for TX gardens — it actually blooms better as temperatures climb. Freezes back in winter but reshoots vigorously; grow it as a perennial in South TX, annual elsewhere.",
+    "hardiness_zone_min": 8,
+    "hardiness_zone_max": 11,
+    "states": [
+      "TX",
+      "FL",
+      "AZ",
+      "CA"
+    ],
+    "native_states": [],
+    "seasons": [
+      "summer",
+      "fall"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": false,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "mixed"
+    ],
+    "tags": [
+      "drought-tolerant",
+      "heat-tolerant",
+      "hummingbird",
+      "pollinator",
+      "colorful"
+    ]
+  },
+  {
+    "scientific_name": "Lagerstroemia indica",
+    "common_name": "Crape Myrtle",
+    "emoji": "🌸",
+    "category": "Trees",
+    "care_level": "easy",
+    "description": "The quintessential summer-blooming tree of the South, producing spectacular clusters of crinkled flowers in white, pink, red, or lavender for months during the hottest part of summer. Thrives in TX heat and humidity, offering beautiful exfoliating bark for winter interest and brilliant fall color. Resist the urge to 'crape murder' — light pruning is all that's needed.",
+    "hardiness_zone_min": 7,
+    "hardiness_zone_max": 10,
+    "states": [
+      "TX",
+      "OK",
+      "LA",
+      "AR",
+      "GA",
+      "CA"
+    ],
+    "native_states": [],
+    "seasons": [
+      "summer",
+      "fall"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "mixed"
+    ],
+    "tags": [
+      "drought-tolerant",
+      "heat-tolerant",
+      "colorful",
+      "four-season",
+      "long-blooming"
+    ]
+  },
+  {
+    "scientific_name": "Vitex agnus-castus",
+    "common_name": "Chaste Tree",
+    "emoji": "💜",
+    "category": "Trees",
+    "care_level": "easy",
+    "description": "A fast-growing small tree or large shrub smothered in fragrant lavender-blue flower spikes in summer, continuing to rebloom through fall. Heat and drought tolerant once established, it thrives in TX summers and provides excellent food for native bees. Aromatic, gray-green foliage adds texture; cut back hard in late winter for the most vigorous flowering.",
+    "hardiness_zone_min": 6,
+    "hardiness_zone_max": 9,
+    "states": [
+      "TX",
+      "OK",
+      "AR",
+      "TN",
+      "CA"
+    ],
+    "native_states": [],
+    "seasons": [
+      "summer",
+      "fall"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "mixed"
+    ],
+    "tags": [
+      "drought-tolerant",
+      "fragrant",
+      "pollinator",
+      "fast-growing",
+      "deer-resistant"
+    ]
+  },
+  {
+    "scientific_name": "Chilopsis linearis",
+    "common_name": "Desert Willow",
+    "emoji": "🌸",
+    "category": "Trees",
+    "care_level": "easy",
+    "description": "A graceful Texas native small tree with willow-like foliage and large, orchid-like flowers in pink, purple, or white that bloom from spring through fall. Hummingbirds cannot resist the nectar-rich blooms. Extremely drought and heat tolerant once established, and relatively fast-growing — a beautiful, water-wise alternative to traditional flowering trees.",
+    "hardiness_zone_min": 7,
+    "hardiness_zone_max": 11,
+    "states": [
+      "TX",
+      "NM",
+      "AZ",
+      "CA"
+    ],
+    "native_states": [
+      "TX"
+    ],
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "mixed"
+    ],
+    "tags": [
+      "native",
+      "drought-tolerant",
+      "hummingbird",
+      "fast-growing",
+      "long-blooming"
+    ]
+  },
+  {
+    "scientific_name": "Muhlenbergia lindheimeri",
+    "common_name": "Lindheimer's Muhly Grass",
+    "emoji": "🌾",
+    "category": "Grasses",
+    "care_level": "easy",
+    "description": "A refined, clump-forming native grass with steel-blue foliage and airy silver plumes in fall that catch the light beautifully, especially at sunset. Named after Ferdinand Lindheimer, the father of Texas botany, it's one of the most elegant ornamental grasses for TX gardens. Drought-tolerant and deer-resistant; cut to the ground in late winter before new growth emerges.",
+    "hardiness_zone_min": 7,
+    "hardiness_zone_max": 10,
+    "states": [
+      "TX"
+    ],
+    "native_states": [
+      "TX"
+    ],
+    "seasons": [
+      "fall"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "mixed"
+    ],
+    "tags": [
+      "native",
+      "drought-tolerant",
+      "deer-resistant",
+      "architectural",
+      "four-season"
+    ]
+  },
+  {
+    "scientific_name": "Muhlenbergia capillaris",
+    "common_name": "Gulf Muhly Grass",
+    "emoji": "🌸",
+    "category": "Grasses",
+    "care_level": "easy",
+    "description": "One of fall's showiest ornamental grasses, transforming into a cloud of brilliant pink-purple plumes from October through December. Gulf muhly is a native grass perfectly adapted to the heat and humidity of TX and CA coastal gardens. Plant in masses for a spectacular fall display, and leave the plumes standing through winter to provide textural interest and bird seed.",
+    "hardiness_zone_min": 5,
+    "hardiness_zone_max": 10,
+    "states": [
+      "TX",
+      "FL",
+      "GA",
+      "CA"
+    ],
+    "native_states": [
+      "TX"
+    ],
+    "seasons": [
+      "fall",
+      "winter"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "mixed"
+    ],
+    "tags": [
+      "native",
+      "drought-tolerant",
+      "colorful",
+      "deer-resistant",
+      "wildlife-habitat"
+    ]
+  },
+  {
+    "scientific_name": "Lantana camara",
+    "common_name": "Lantana",
+    "emoji": "🌈",
+    "category": "Flowers",
+    "care_level": "easy",
+    "description": "An unstoppable bloomer that flowers from spring through first frost in clusters of yellow, orange, red, and pink — often all on the same plant — in the most intense TX summer heat. Butterflies and hummingbirds are constant companions to this tough plant. In Zone 8+, it often returns as a perennial; elsewhere grow as an annual for incredible seasonal color.",
+    "hardiness_zone_min": 7,
+    "hardiness_zone_max": 11,
+    "states": [
+      "TX",
+      "FL",
+      "GA",
+      "CA",
+      "AZ"
+    ],
+    "native_states": [],
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "balcony",
+      "mixed"
+    ],
+    "tags": [
+      "drought-tolerant",
+      "heat-tolerant",
+      "hummingbird",
+      "pollinator",
+      "long-blooming"
+    ]
+  },
+  {
+    "scientific_name": "Rosa 'Knock Out'",
+    "common_name": "Knock Out Rose",
+    "emoji": "🌹",
+    "category": "Shrubs",
+    "care_level": "easy",
+    "description": "The rose that revolutionized gardening — disease-resistant, self-cleaning (no deadheading needed), and blooming in waves from spring through hard frost. Thrives in the challenging conditions of TX and CA summers with much less care than traditional roses. Available in red, pink, yellow, and white; plant in groups of three for maximum visual impact.",
+    "hardiness_zone_min": 5,
+    "hardiness_zone_max": 9,
+    "states": [
+      "TX",
+      "CA",
+      "OK",
+      "AR",
+      "TN",
+      "GA"
+    ],
+    "native_states": [],
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "sun": "full-sun",
+    "water": "moderate",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "mixed"
+    ],
+    "tags": [
+      "disease-resistant",
+      "long-blooming",
+      "pollinator",
+      "deer-resistant"
+    ]
+  },
+  {
+    "scientific_name": "Bouteloua dactyloides",
+    "common_name": "Buffalo Grass",
+    "emoji": "🌿",
+    "category": "Grasses",
+    "care_level": "easy",
+    "description": "The native prairie grass of the Great Plains adapted perfectly to TX heat, drought, and alkaline soils, requiring a fraction of the water and mowing of traditional turf grass. Once established it survives on natural rainfall alone, staying low and dense without irrigation. Turns straw-colored in winter but greens up reliably in spring — a sustainable, water-wise lawn alternative.",
+    "hardiness_zone_min": 4,
+    "hardiness_zone_max": 9,
+    "states": [
+      "TX",
+      "OK",
+      "KS",
+      "NE",
+      "CO"
+    ],
+    "native_states": [
+      "TX"
+    ],
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard"
+    ],
+    "tags": [
+      "native",
+      "drought-tolerant",
+      "lawn-alternative",
+      "low-maintenance"
+    ]
+  },
+  {
+    "scientific_name": "Prunus mexicana",
+    "common_name": "Mexican Plum",
+    "emoji": "🍑",
+    "category": "Trees",
+    "care_level": "moderate",
+    "description": "A beautiful small native tree that puts on a spectacular show of fragrant white flowers in late winter before the leaves emerge, then produces small, sweet-tart plums in late summer. Thrives in TX's alkaline clay and limestone soils with no special care once established. Wildlife adore the fruits, and the tree provides important early-season nectar for native bees.",
+    "hardiness_zone_min": 6,
+    "hardiness_zone_max": 9,
+    "states": [
+      "TX",
+      "OK",
+      "AR",
+      "LA"
+    ],
+    "native_states": [
+      "TX"
+    ],
+    "seasons": [
+      "winter",
+      "spring",
+      "summer"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": false,
+    "garden_types": [
+      "backyard",
+      "front-yard"
+    ],
+    "tags": [
+      "native",
+      "drought-tolerant",
+      "wildlife-habitat",
+      "edible",
+      "fragrant"
+    ]
+  },
+  {
+    "scientific_name": "Lavandula angustifolia",
+    "common_name": "English Lavender",
+    "emoji": "💜",
+    "category": "Herbs",
+    "care_level": "easy",
+    "description": "Fragrant, drought-tolerant perennial beloved by bees that thrives in hot, dry conditions with excellent drainage. Its silvery foliage and purple flower wands are beautiful from spring through summer, and dried lavender retains its fragrance for months. Trim lightly after flowering to keep it compact; avoid cutting into old wood.",
+    "hardiness_zone_min": 5,
+    "hardiness_zone_max": 9,
+    "states": [
+      "CA",
+      "TX",
+      "OR",
+      "WA",
+      "NV",
+      "CO"
+    ],
+    "native_states": [],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "balcony",
+      "mixed"
+    ],
+    "tags": [
+      "fragrant",
+      "drought-tolerant",
+      "pollinator",
+      "deer-resistant",
+      "edible"
+    ]
+  },
+  {
+    "scientific_name": "Salvia rosmarinus",
+    "common_name": "Rosemary",
+    "emoji": "🌿",
+    "category": "Herbs",
+    "care_level": "easy",
+    "description": "An indispensable culinary herb that doubles as an attractive, drought-tolerant evergreen shrub covered in small blue flowers that pollinators adore. Thrives in hot, dry conditions with excellent drainage and needs virtually no care once established — the Mediterranean heat of CA and TX suits it perfectly. Available in upright and trailing forms; harvest frequently to keep it bushy.",
+    "hardiness_zone_min": 8,
+    "hardiness_zone_max": 11,
+    "states": [
+      "CA",
+      "TX",
+      "FL",
+      "AZ",
+      "NV"
+    ],
+    "native_states": [],
+    "seasons": [
+      "spring",
+      "summer",
+      "fall",
+      "winter"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "balcony",
+      "mixed"
+    ],
+    "tags": [
+      "edible",
+      "fragrant",
+      "drought-tolerant",
+      "pollinator",
+      "deer-resistant",
+      "evergreen"
+    ]
+  },
+  {
+    "scientific_name": "Salvia leucantha",
+    "common_name": "Mexican Bush Sage",
+    "emoji": "💜",
+    "category": "Herbs",
+    "care_level": "moderate",
+    "description": "A stunning late-season bloomer with long, velvety purple and white flower spikes that appear from late summer through frost when most other plants have finished. Its dramatic, arching stems and soft purple flowers pair beautifully with ornamental grasses and yellow-flowered plants. Cut back to the ground in late winter; it regrows vigorously from the base.",
+    "hardiness_zone_min": 7,
+    "hardiness_zone_max": 10,
+    "states": [
+      "CA",
+      "TX",
+      "FL",
+      "AZ"
+    ],
+    "native_states": [],
+    "seasons": [
+      "summer",
+      "fall"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": false,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "mixed"
+    ],
+    "tags": [
+      "drought-tolerant",
+      "hummingbird",
+      "pollinator",
+      "deer-resistant",
+      "long-blooming"
+    ]
+  },
+  {
+    "scientific_name": "Agastache foeniculum",
+    "common_name": "Anise Hyssop",
+    "emoji": "💜",
+    "category": "Herbs",
+    "care_level": "easy",
+    "description": "An anise-scented native prairie herb with tall spikes of blue-purple flowers that bloom from midsummer through fall, attracting an astonishing diversity of bees, butterflies, and hummingbirds. Both the leaves and flowers are edible with a pleasant licorice flavor. Self-seeds generously in the garden, providing new plants each year without any effort.",
+    "hardiness_zone_min": 5,
+    "hardiness_zone_max": 10,
+    "states": [
+      "CA",
+      "TX",
+      "OR",
+      "CO",
+      "WA"
+    ],
+    "native_states": [],
+    "seasons": [
+      "summer",
+      "fall"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "balcony",
+      "mixed"
+    ],
+    "tags": [
+      "fragrant",
+      "edible",
+      "pollinator",
+      "hummingbird",
+      "deer-resistant"
+    ]
+  },
+  {
+    "scientific_name": "Nerium oleander",
+    "common_name": "Oleander",
+    "emoji": "🌸",
+    "category": "Shrubs",
+    "care_level": "easy",
+    "description": "A tough, heat-loving evergreen shrub that produces clusters of showy flowers in pink, red, white, or yellow through the hottest summer months when little else blooms. Extremely drought and heat tolerant once established — a staple of CA and TX highway medians for good reason. Note: all parts are toxic; wear gloves when pruning and keep away from children and pets.",
+    "hardiness_zone_min": 8,
+    "hardiness_zone_max": 11,
+    "states": [
+      "CA",
+      "TX",
+      "FL",
+      "AZ",
+      "NV"
+    ],
+    "native_states": [],
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "mixed"
+    ],
+    "tags": [
+      "drought-tolerant",
+      "heat-tolerant",
+      "evergreen",
+      "colorful",
+      "long-blooming"
+    ]
+  },
+  {
+    "scientific_name": "Punica granatum",
+    "common_name": "Pomegranate",
+    "emoji": "🍎",
+    "category": "Fruits",
+    "care_level": "moderate",
+    "description": "A beautiful dual-purpose shrub with brilliant orange-red flowers in spring followed by large, jewel-red fruit in fall. Thrives in the hot, dry summers of CA and TX with minimal water once established — pomegranates actually require hot summers to ripen well. Ornamental varieties offer the spectacular flowers without the messy fruit; fruiting varieties include 'Wonderful' for the best flavor.",
+    "hardiness_zone_min": 7,
+    "hardiness_zone_max": 11,
+    "states": [
+      "CA",
+      "TX",
+      "AZ",
+      "FL",
+      "NV"
+    ],
+    "native_states": [],
+    "seasons": [
+      "spring",
+      "fall"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": false,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "mixed"
+    ],
+    "tags": [
+      "edible",
+      "drought-tolerant",
+      "ornamental",
+      "colorful"
+    ]
+  },
+  {
+    "scientific_name": "Ficus carica",
+    "common_name": "Fig",
+    "emoji": "🌳",
+    "category": "Fruits",
+    "care_level": "easy",
+    "description": "A magnificent fruiting tree that thrives in the Mediterranean-like climates of CA and TX, producing two crops of sweet figs per year in ideal conditions. Figs are remarkably drought-tolerant once established, requiring minimal care beyond occasional deep watering. The bold, tropical-looking foliage is beautiful in its own right; 'Brown Turkey' and 'Black Mission' are excellent varieties.",
+    "hardiness_zone_min": 8,
+    "hardiness_zone_max": 11,
+    "states": [
+      "CA",
+      "TX",
+      "FL",
+      "AZ"
+    ],
+    "native_states": [],
+    "seasons": [
+      "summer",
+      "fall"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "mixed"
+    ],
+    "tags": [
+      "edible",
+      "drought-tolerant",
+      "shade-tree",
+      "productive"
+    ]
+  },
+  {
+    "scientific_name": "Solanum lycopersicum",
+    "common_name": "Tomato",
+    "emoji": "🍅",
+    "category": "Vegetables",
+    "care_level": "easy",
+    "description": "The ultimate summer garden vegetable, rewarding gardeners with an abundance of juicy, sun-ripened tomatoes far superior to anything from a store. In CA and TX, start transplants after last frost and give them full sun, consistent watering, and support stakes or cages. Choose heat-tolerant varieties like 'Celebrity' or 'Heatmaster' for TX summers.",
+    "hardiness_zone_min": 2,
+    "hardiness_zone_max": 13,
+    "states": [
+      "CA",
+      "TX",
+      "OR",
+      "WA",
+      "FL",
+      "NY",
+      "IL"
+    ],
+    "native_states": [],
+    "seasons": [
+      "summer"
+    ],
+    "sun": "full-sun",
+    "water": "moderate",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "balcony",
+      "mixed"
+    ],
+    "tags": [
+      "edible",
+      "productive",
+      "summer-vegetable",
+      "container-friendly"
+    ]
+  },
+  {
+    "scientific_name": "Capsicum annuum",
+    "common_name": "Bell Pepper",
+    "emoji": "🫑",
+    "category": "Vegetables",
+    "care_level": "easy",
+    "description": "Sweet bell peppers thrive in the long, warm summers of CA and TX, producing abundantly from midsummer through fall. Peppers are actually more heat-tolerant than tomatoes and continue producing when tomatoes stall. Start transplants after the last frost and feed with a balanced fertilizer to encourage heavy fruit set; they grow beautifully in containers.",
+    "hardiness_zone_min": 2,
+    "hardiness_zone_max": 13,
+    "states": [
+      "CA",
+      "TX",
+      "FL",
+      "GA",
+      "OR"
+    ],
+    "native_states": [],
+    "seasons": [
+      "summer"
+    ],
+    "sun": "full-sun",
+    "water": "moderate",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "balcony",
+      "mixed"
+    ],
+    "tags": [
+      "edible",
+      "productive",
+      "summer-vegetable",
+      "container-friendly"
+    ]
+  },
+  {
+    "scientific_name": "Cucurbita pepo var. melopepo",
+    "common_name": "Summer Squash",
+    "emoji": "🥒",
+    "category": "Vegetables",
+    "care_level": "easy",
+    "description": "One of the most productive summer vegetables you can grow — famously, you can almost watch it grow. Yellow crookneck and patty pan varieties are perfect for CA and TX summers, producing abundantly from a few plants. Pick fruits when small for best flavor and to keep the plant producing; one or two plants is usually more than enough for a family.",
+    "hardiness_zone_min": 2,
+    "hardiness_zone_max": 13,
+    "states": [
+      "CA",
+      "TX",
+      "FL",
+      "OR",
+      "WA"
+    ],
+    "native_states": [],
+    "seasons": [
+      "summer"
+    ],
+    "sun": "full-sun",
+    "water": "moderate",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "mixed"
+    ],
+    "tags": [
+      "edible",
+      "productive",
+      "summer-vegetable",
+      "fast-growing"
+    ]
+  },
+  {
+    "scientific_name": "Solanum lycopersicum var. cerasiforme",
+    "common_name": "Cherry Tomato",
+    "emoji": "🍒",
+    "category": "Vegetables",
+    "care_level": "easy",
+    "description": "The most reliable and prolific tomato for hot CA and TX summers, producing hundreds of sweet little fruits on vigorous vines from midsummer through frost. 'Sun Gold' (orange, intensely sweet), 'Sweet 100' (red, classic), and 'Black Cherry' (smoky flavor) are all excellent choices. They grow beautifully in containers and hanging baskets on balconies.",
+    "hardiness_zone_min": 2,
+    "hardiness_zone_max": 13,
+    "states": [
+      "CA",
+      "TX",
+      "FL",
+      "OR",
+      "WA",
+      "NY"
+    ],
+    "native_states": [],
+    "seasons": [
+      "summer"
+    ],
+    "sun": "full-sun",
+    "water": "moderate",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "balcony",
+      "mixed"
+    ],
+    "tags": [
+      "edible",
+      "productive",
+      "container-friendly",
+      "summer-vegetable"
+    ]
+  },
+  {
+    "scientific_name": "Ocimum basilicum",
+    "common_name": "Sweet Basil",
+    "emoji": "🌿",
+    "category": "Herbs",
+    "care_level": "easy",
+    "description": "The essential summer herb that thrives alongside tomatoes in CA and TX gardens, producing fragrant, flavorful leaves for pesto, salads, and cooking from summer through fall. Plant after all frost danger has passed, pinch out flower spikes to delay bolting, and harvest often from the top to encourage bushy growth. Thai, Genovese, and Lemon basil are all excellent varieties.",
+    "hardiness_zone_min": 2,
+    "hardiness_zone_max": 13,
+    "states": [
+      "CA",
+      "TX",
+      "FL",
+      "OR",
+      "WA",
+      "NY"
+    ],
+    "native_states": [],
+    "seasons": [
+      "summer"
+    ],
+    "sun": "full-sun",
+    "water": "moderate",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "balcony",
+      "indoor",
+      "mixed"
+    ],
+    "tags": [
+      "edible",
+      "fragrant",
+      "container-friendly",
+      "summer-herb"
+    ]
+  },
+  {
+    "scientific_name": "Coriandrum sativum",
+    "common_name": "Cilantro",
+    "emoji": "🌿",
+    "category": "Herbs",
+    "care_level": "easy",
+    "description": "A cool-season herb that grows best in spring and fall in CA and TX, going to seed quickly in summer heat. Sow seeds directly every 3-4 weeks for a continuous harvest. Both the leaves (cilantro) and seeds (coriander) are valuable culinary ingredients. Let some plants bolt and set seed — they'll self-sow for a perpetual supply.",
+    "hardiness_zone_min": 2,
+    "hardiness_zone_max": 13,
+    "states": [
+      "CA",
+      "TX",
+      "FL",
+      "OR",
+      "WA",
+      "NY"
+    ],
+    "native_states": [],
+    "seasons": [
+      "spring",
+      "fall"
+    ],
+    "sun": "full-sun",
+    "water": "moderate",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "balcony",
+      "indoor",
+      "mixed"
+    ],
+    "tags": [
+      "edible",
+      "container-friendly",
+      "cool-season",
+      "self-seeding"
+    ]
+  },
+  {
+    "scientific_name": "Mentha spicata",
+    "common_name": "Mint",
+    "emoji": "🫙",
+    "category": "Herbs",
+    "care_level": "easy",
+    "description": "Wonderfully fragrant and productive, mint is one of the easiest herbs to grow — so easy that it must be confined to a container to prevent it from taking over the garden. Spearmint, peppermint, chocolate mint, and apple mint all thrive in CA and TX with regular water. Harvest frequently and cut flower spikes off to keep leaves at their most flavorful.",
+    "hardiness_zone_min": 3,
+    "hardiness_zone_max": 11,
+    "states": [
+      "CA",
+      "TX",
+      "FL",
+      "OR",
+      "WA",
+      "NY"
+    ],
+    "native_states": [],
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "sun": "full-sun",
+    "water": "moderate",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "balcony",
+      "indoor",
+      "mixed"
+    ],
+    "tags": [
+      "edible",
+      "fragrant",
+      "container-friendly",
+      "spreading"
+    ]
+  },
+  {
+    "scientific_name": "Thymus vulgaris",
+    "common_name": "Thyme",
+    "emoji": "🌿",
+    "category": "Herbs",
+    "care_level": "easy",
+    "description": "A Mediterranean herb that thrives in the hot, dry conditions of CA and TX with almost no care — excellent drainage and full sun are its only real requirements. Tiny pink flowers in spring attract bees, and the woody stems provide structure through winter. Harvest frequently and trim after flowering to keep it compact; replace plants every 3-4 years when they become woody.",
+    "hardiness_zone_min": 4,
+    "hardiness_zone_max": 9,
+    "states": [
+      "CA",
+      "TX",
+      "OR",
+      "WA",
+      "CO"
+    ],
+    "native_states": [],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "balcony",
+      "indoor",
+      "mixed"
+    ],
+    "tags": [
+      "edible",
+      "fragrant",
+      "drought-tolerant",
+      "pollinator",
+      "container-friendly"
+    ]
+  },
+  {
+    "scientific_name": "Origanum vulgare",
+    "common_name": "Oregano",
+    "emoji": "🌿",
+    "category": "Herbs",
+    "care_level": "easy",
+    "description": "The indispensable Italian herb that grows vigorously in CA and TX gardens, developing its most intense flavor in hot, sunny, slightly dry conditions. It spreads to form a fragrant groundcover, with clusters of tiny flowers that bees adore in summer. Greek oregano has the strongest culinary flavor; harvest before flowering for the most aromatic leaves.",
+    "hardiness_zone_min": 5,
+    "hardiness_zone_max": 10,
+    "states": [
+      "CA",
+      "TX",
+      "FL",
+      "OR",
+      "WA"
+    ],
+    "native_states": [],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "balcony",
+      "indoor",
+      "mixed"
+    ],
+    "tags": [
+      "edible",
+      "fragrant",
+      "drought-tolerant",
+      "pollinator",
+      "container-friendly"
+    ]
+  },
+  {
+    "scientific_name": "Beta vulgaris subsp. cicla",
+    "common_name": "Swiss Chard",
+    "emoji": "🥬",
+    "category": "Vegetables",
+    "care_level": "easy",
+    "description": "A beautiful, productive cool-season vegetable with brilliant rainbow-colored stems in red, yellow, orange, and white — ornamental enough for a flower border. In CA and TX it grows through fall, winter, and spring, providing continuous harvests of nutritious greens. Pick outer leaves and the plant keeps producing for months; it's one of the most rewarding vegetables for beginning gardeners.",
+    "hardiness_zone_min": 2,
+    "hardiness_zone_max": 11,
+    "states": [
+      "CA",
+      "TX",
+      "FL",
+      "OR",
+      "WA"
+    ],
+    "native_states": [],
+    "seasons": [
+      "fall",
+      "winter",
+      "spring"
+    ],
+    "sun": "full-sun",
+    "water": "moderate",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "balcony",
+      "mixed"
+    ],
+    "tags": [
+      "edible",
+      "colorful",
+      "cool-season",
+      "container-friendly",
+      "productive"
+    ]
+  },
+  {
+    "scientific_name": "Brassica oleracea var. sabellica",
+    "common_name": "Kale",
+    "emoji": "🥬",
+    "category": "Vegetables",
+    "care_level": "easy",
+    "description": "A nutritional powerhouse that thrives as a cool-season vegetable in CA and TX, producing abundant harvests from fall through spring. 'Lacinato' (dinosaur kale) is particularly beautiful with its deeply crinkled, blue-green leaves, and 'Red Russian' has beautiful purple-tinged leaves. Harvest outer leaves continuously; cold weather actually improves the sweetness of the leaves.",
+    "hardiness_zone_min": 2,
+    "hardiness_zone_max": 11,
+    "states": [
+      "CA",
+      "TX",
+      "FL",
+      "OR",
+      "WA",
+      "NY"
+    ],
+    "native_states": [],
+    "seasons": [
+      "fall",
+      "winter",
+      "spring"
+    ],
+    "sun": "full-sun",
+    "water": "moderate",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "balcony",
+      "mixed"
+    ],
+    "tags": [
+      "edible",
+      "cool-season",
+      "nutritious",
+      "container-friendly",
+      "productive"
+    ]
+  },
+  {
+    "scientific_name": "Fragaria x ananassa",
+    "common_name": "Strawberry",
+    "emoji": "🍓",
+    "category": "Fruits",
+    "care_level": "easy",
+    "description": "Few garden moments beat eating a warm, sun-ripened strawberry straight from the plant. In CA, the growing season is nearly year-round with the right variety; in TX, they thrive in spring and fall. 'Chandler' and 'Albion' are excellent CA varieties; 'Sequoia' grows well in TX. Plant in raised beds or containers with excellent drainage, and feed with a balanced fertilizer monthly.",
+    "hardiness_zone_min": 3,
+    "hardiness_zone_max": 10,
+    "states": [
+      "CA",
+      "TX",
+      "FL",
+      "OR",
+      "WA"
+    ],
+    "native_states": [],
+    "seasons": [
+      "spring",
+      "fall"
+    ],
+    "sun": "full-sun",
+    "water": "moderate",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "balcony",
+      "mixed"
+    ],
+    "tags": [
+      "edible",
+      "container-friendly",
+      "productive",
+      "kids-friendly"
+    ]
+  },
+  {
+    "scientific_name": "Helianthus annuus",
+    "common_name": "Sunflower",
+    "emoji": "🌻",
+    "category": "Flowers",
+    "care_level": "easy",
+    "description": "The ultimate beginner's flower — fast-growing, cheerful, and rewarding for gardeners of all ages. Direct-sow seeds after last frost in full sun; they need very little care and grow rapidly to their impressive heights. Grow giants like 'Russian Giant' for drama, or branching varieties like 'Velvet Queen' for months of blooms. Leave seedheads for goldfinches and other birds.",
+    "hardiness_zone_min": 2,
+    "hardiness_zone_max": 13,
+    "states": [
+      "CA",
+      "TX",
+      "FL",
+      "OR",
+      "WA",
+      "CO"
+    ],
+    "native_states": [],
+    "seasons": [
+      "summer"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "mixed"
+    ],
+    "tags": [
+      "edible",
+      "wildlife-habitat",
+      "fast-growing",
+      "kids-friendly",
+      "pollinator"
+    ]
+  },
+  {
+    "scientific_name": "Cucurbita pepo",
+    "common_name": "Zucchini",
+    "emoji": "🥒",
+    "category": "Vegetables",
+    "care_level": "easy",
+    "description": "The famously productive summer squash that yields abundantly in CA and TX gardens — so productive that gardeners often leave zucchini on neighbors' doorsteps! One or two plants is plenty for a family. Direct-sow after last frost and stand back; harvest fruits at 6-8 inches for best flavor and to keep the plant producing through the season.",
+    "hardiness_zone_min": 2,
+    "hardiness_zone_max": 13,
+    "states": [
+      "CA",
+      "TX",
+      "FL",
+      "OR",
+      "WA"
+    ],
+    "native_states": [],
+    "seasons": [
+      "summer"
+    ],
+    "sun": "full-sun",
+    "water": "moderate",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "mixed"
+    ],
+    "tags": [
+      "edible",
+      "productive",
+      "fast-growing",
+      "summer-vegetable"
+    ]
+  },
+  {
+    "scientific_name": "Capsicum annuum 'Jalapeño'",
+    "common_name": "Jalapeño Pepper",
+    "emoji": "🌶️",
+    "category": "Vegetables",
+    "care_level": "easy",
+    "description": "Jalapeños absolutely thrive in the heat of TX and CA summers, producing more prolifically the hotter it gets. A single plant can yield dozens of peppers from midsummer through frost. Plant after last frost in full sun and feed monthly; harvest peppers while green for less heat, or leave them to turn red for deeper, sweeter flavor. They grow beautifully in containers.",
+    "hardiness_zone_min": 2,
+    "hardiness_zone_max": 13,
+    "states": [
+      "CA",
+      "TX",
+      "FL",
+      "AZ",
+      "NM"
+    ],
+    "native_states": [],
+    "seasons": [
+      "summer"
+    ],
+    "sun": "full-sun",
+    "water": "moderate",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "balcony",
+      "mixed"
+    ],
+    "tags": [
+      "edible",
+      "productive",
+      "container-friendly",
+      "summer-vegetable",
+      "heat-tolerant"
+    ]
+  },
+  {
+    "scientific_name": "Salvia officinalis",
+    "common_name": "Garden Sage",
+    "emoji": "🌿",
+    "category": "Herbs",
+    "care_level": "easy",
+    "description": "A beautiful culinary herb with soft, silvery-gray aromatic leaves and spikes of purple-blue flowers that attract bees and butterflies. Sage thrives in the well-draining, sunny conditions of CA and TX, and is virtually drought-proof once established. Purple sage, tricolor sage, and golden sage are beautiful ornamental cultivars that are equally useful in the kitchen.",
+    "hardiness_zone_min": 4,
+    "hardiness_zone_max": 9,
+    "states": [
+      "CA",
+      "TX",
+      "OR",
+      "WA",
+      "CO"
+    ],
+    "native_states": [],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "balcony",
+      "indoor",
+      "mixed"
+    ],
+    "tags": [
+      "edible",
+      "fragrant",
+      "drought-tolerant",
+      "pollinator",
+      "container-friendly"
+    ]
+  },
+  {
+    "scientific_name": "Zinnia elegans",
+    "common_name": "Zinnia",
+    "emoji": "🌸",
+    "category": "Flowers",
+    "care_level": "easy",
+    "description": "The easiest, most rewarding annual flower for summer gardens in CA and TX, blooming in every color of the rainbow from midsummer through frost without missing a beat in the hottest weather. Direct-sow seeds after last frost in full sun; they grow rapidly and reward regular deadheading with even more blooms. Monarch butterflies use zinnias as a critical nectar source during migration.",
+    "hardiness_zone_min": 2,
+    "hardiness_zone_max": 13,
+    "states": [
+      "CA",
+      "TX",
+      "FL",
+      "OR",
+      "WA",
+      "NY"
+    ],
+    "native_states": [],
+    "seasons": [
+      "summer",
+      "fall"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "balcony",
+      "mixed"
+    ],
+    "tags": [
+      "colorful",
+      "pollinator",
+      "fast-growing",
+      "kids-friendly",
+      "long-blooming"
+    ]
+  },
+  {
+    "scientific_name": "Gazania rigens",
+    "common_name": "Treasure Flower",
+    "emoji": "🌼",
+    "category": "Flowers",
+    "care_level": "easy",
+    "description": "Brilliant daisy-like flowers in vivid shades of yellow, orange, red, and bronze that close at night and open to face the sun each morning. An excellent drought-tolerant groundcover for hot, dry CA and TX gardens, particularly useful on slopes and in coastal areas. Blooms prolifically through spring and summer with almost no care beyond occasional water.",
+    "hardiness_zone_min": 9,
+    "hardiness_zone_max": 11,
+    "states": [
+      "CA",
+      "TX",
+      "FL",
+      "AZ"
+    ],
+    "native_states": [],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "balcony",
+      "mixed"
+    ],
+    "tags": [
+      "drought-tolerant",
+      "colorful",
+      "groundcover",
+      "long-blooming"
+    ]
+  },
+  {
+    "scientific_name": "Penstemon eatonii",
+    "common_name": "Firecracker Penstemon",
+    "emoji": "🔴",
+    "category": "Flowers",
+    "care_level": "easy",
+    "description": "A spectacular native wildflower with vivid scarlet-red tubular flowers on tall stems that hummingbirds find irresistible, blooming in late winter and early spring when hummers need fuel most. Extremely drought-tolerant and adapted to poor, rocky soils throughout the Southwest. Plant it near a window and enjoy the constant hummingbird activity from late winter through spring.",
+    "hardiness_zone_min": 5,
+    "hardiness_zone_max": 10,
+    "states": [
+      "CA",
+      "TX",
+      "AZ",
+      "NM",
+      "UT",
+      "NV"
+    ],
+    "native_states": [
+      "CA"
+    ],
+    "seasons": [
+      "winter",
+      "spring"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "mixed"
+    ],
+    "tags": [
+      "native",
+      "drought-tolerant",
+      "hummingbird",
+      "wildflower",
+      "deer-resistant"
+    ]
+  },
+  {
+    "scientific_name": "Catharanthus roseus",
+    "common_name": "Vinca / Periwinkle",
+    "emoji": "🌸",
+    "category": "Flowers",
+    "care_level": "easy",
+    "description": "An extraordinary heat-tolerant annual that blooms continuously through the most brutal TX and CA summers without pause, smothering itself in cheerful flowers in pink, red, white, and lavender. Unlike most annuals, it actually blooms better in summer heat and withstands drought surprisingly well. An invaluable summer bedding plant for long-season color in hot climates.",
+    "hardiness_zone_min": 2,
+    "hardiness_zone_max": 13,
+    "states": [
+      "CA",
+      "TX",
+      "FL",
+      "GA",
+      "AZ"
+    ],
+    "native_states": [],
+    "seasons": [
+      "summer"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "balcony",
+      "mixed"
+    ],
+    "tags": [
+      "heat-tolerant",
+      "drought-tolerant",
+      "long-blooming",
+      "colorful"
+    ]
+  },
+  {
+    "scientific_name": "Duranta erecta",
+    "common_name": "Sky Flower",
+    "emoji": "💙",
+    "category": "Shrubs",
+    "care_level": "easy",
+    "description": "A gorgeous tropical shrub with cascading clusters of small lavender-blue flowers followed by golden-yellow berries that birds adore — delivering beauty at two distinct times of year. Thrives in the heat of TX and Southern CA summers, growing rapidly and blooming prolifically. Butterflies and hummingbirds are regular visitors; freeze-hardy in Zone 8b and warmer.",
+    "hardiness_zone_min": 9,
+    "hardiness_zone_max": 12,
+    "states": [
+      "CA",
+      "TX",
+      "FL"
+    ],
+    "native_states": [],
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "sun": "full-sun",
+    "water": "moderate",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "mixed"
+    ],
+    "tags": [
+      "tropical",
+      "hummingbird",
+      "wildlife-habitat",
+      "colorful",
+      "fast-growing"
+    ]
+  },
+  {
+    "scientific_name": "Salvia coccinea",
+    "common_name": "Scarlet Sage",
+    "emoji": "❤️",
+    "category": "Herbs",
+    "care_level": "easy",
+    "description": "A cheerful, heat-loving annual sage native to the southeastern US that blooms brilliantly from spring through first frost with vivid red, pink, or white flowers on upright spikes. Hummingbirds and butterflies compete for the abundant nectar. It self-seeds prolifically in TX and CA, returning reliably each year without replanting. Extremely heat and drought tolerant once established.",
+    "hardiness_zone_min": 2,
+    "hardiness_zone_max": 13,
+    "states": [
+      "CA",
+      "TX",
+      "FL",
+      "GA"
+    ],
+    "native_states": [],
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "balcony",
+      "mixed"
+    ],
+    "tags": [
+      "hummingbird",
+      "pollinator",
+      "heat-tolerant",
+      "self-seeding",
+      "long-blooming"
+    ]
+  },
+  {
+    "scientific_name": "Portulaca grandiflora",
+    "common_name": "Moss Rose",
+    "emoji": "🌹",
+    "category": "Flowers",
+    "care_level": "easy",
+    "description": "A cheerful, almost indestructible annual that flowers brilliantly in hot, dry, sunny spots where most plants struggle — perfect for TX and CA summer gardens. Produces masses of satiny, rose-like flowers in brilliant reds, oranges, yellows, and pinks all summer. Thrives in poor, sandy soil and is almost impossible to overwater (it has succulent stems). Perfect for hot, dry slopes and rock gardens.",
+    "hardiness_zone_min": 2,
+    "hardiness_zone_max": 13,
+    "states": [
+      "CA",
+      "TX",
+      "FL",
+      "AZ"
+    ],
+    "native_states": [],
+    "seasons": [
+      "summer"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "balcony",
+      "mixed"
+    ],
+    "tags": [
+      "drought-tolerant",
+      "heat-tolerant",
+      "colorful",
+      "low-maintenance"
+    ]
+  },
+  {
+    "scientific_name": "Festuca glauca",
+    "common_name": "Blue Fescue",
+    "emoji": "🌾",
+    "category": "Grasses",
+    "care_level": "easy",
+    "description": "A fine-textured ornamental grass with striking blue-silver foliage that forms neat, low mounds — a beautiful textural accent in mixed borders and rock gardens. Very drought tolerant once established, preferring well-drained soil and full sun. In CA and TX, it performs best in areas with cool winters; comb out dead leaves in spring and divide every 2-3 years to keep the color vivid.",
+    "hardiness_zone_min": 4,
+    "hardiness_zone_max": 9,
+    "states": [
+      "CA",
+      "TX",
+      "OR",
+      "WA",
+      "CO"
+    ],
+    "native_states": [],
+    "seasons": [
+      "spring",
+      "summer",
+      "fall",
+      "winter"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "balcony",
+      "mixed"
+    ],
+    "tags": [
+      "drought-tolerant",
+      "architectural",
+      "deer-resistant",
+      "container-friendly"
+    ]
+  },
+  {
+    "scientific_name": "Erigeron karvinskianus",
+    "common_name": "Santa Barbara Daisy",
+    "emoji": "🌸",
+    "category": "Flowers",
+    "care_level": "easy",
+    "description": "A delicate-looking but incredibly tough groundcover smothered in small white and pink daisy flowers virtually year-round in mild CA climates. It cascades beautifully over walls, fills cracks in paving, and softens borders with its airy, informal texture. Extremely drought-tolerant and self-seeding, it colonizes happily with minimal water or care once established.",
+    "hardiness_zone_min": 8,
+    "hardiness_zone_max": 11,
+    "states": [
+      "CA",
+      "OR",
+      "AZ"
+    ],
+    "native_states": [],
+    "seasons": [
+      "spring",
+      "summer",
+      "fall",
+      "winter"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "balcony",
+      "mixed"
+    ],
+    "tags": [
+      "drought-tolerant",
+      "groundcover",
+      "long-blooming",
+      "self-seeding",
+      "pollinator"
+    ]
+  },
+  {
+    "scientific_name": "Ocimum tenuiflorum",
+    "common_name": "Tulsi",
+    "emoji": "🌿",
+    "category": "Herbs",
+    "care_level": "easy",
+    "description": "Sacred holy basil prized across South Asian homes for its medicinal, culinary, and spiritual significance. Grows vigorously in warm Bay Area summers as a container or garden plant. Pinch regularly to keep bushy; bring indoors or reseed before first frost. Several varieties available — Vana, Rama, and Krishna tulsi each have distinct aromas.",
+    "hardiness_zone_min": 5,
+    "hardiness_zone_max": 12,
+    "states": [
+      "CA",
+      "TX"
+    ],
+    "native_states": [],
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "sun": "full-sun",
+    "water": "moderate",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "balcony",
+      "indoor",
+      "mixed"
+    ],
+    "tags": [
+      "edible",
+      "medicinal",
+      "fragrant",
+      "pollinator",
+      "container",
+      "south-asian",
+      "spiritual"
+    ]
+  },
+  {
+    "scientific_name": "Trachyspermum ammi",
+    "common_name": "Ajwain",
+    "emoji": "🌱",
+    "category": "Herbs",
+    "care_level": "easy",
+    "description": "Aromatic Indian herb grown for its seeds — a staple in South Asian cooking with a thyme-like flavour. Grows similarly to dill: sow directly in spring, harvest seeds when heads turn brown. Thrives in Bay Area warmth and tolerates summer heat well. Very productive from a single packet of seeds.",
+    "hardiness_zone_min": 7,
+    "hardiness_zone_max": 12,
+    "states": [
+      "CA",
+      "TX"
+    ],
+    "native_states": [],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "balcony",
+      "mixed"
+    ],
+    "tags": [
+      "edible",
+      "medicinal",
+      "south-asian",
+      "seed-harvest",
+      "drought-tolerant"
+    ]
+  },
+  {
+    "scientific_name": "Murraya koenigii",
+    "common_name": "Curry Leaf",
+    "emoji": "🍃",
+    "category": "Shrubs",
+    "care_level": "moderate",
+    "description": "Indispensable aromatic shrub whose fresh leaves are the foundation of South Indian cooking. Grows 4–6 ft in Zone 9-10 Bay Area gardens; excellent in large containers you can move under shelter in cold snaps. Fresh-picked leaves have incomparable flavour vs. dried. Buy from Indian grocery stores or nurseries; grow from suckers at the base of an existing plant.",
+    "hardiness_zone_min": 9,
+    "hardiness_zone_max": 12,
+    "states": [
+      "CA",
+      "TX"
+    ],
+    "native_states": [],
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "sun": "full-sun",
+    "water": "moderate",
+    "beginner_friendly": false,
+    "garden_types": [
+      "backyard",
+      "balcony",
+      "mixed"
+    ],
+    "tags": [
+      "edible",
+      "fragrant",
+      "medicinal",
+      "container",
+      "south-asian",
+      "tropical"
+    ]
+  },
+  {
+    "scientific_name": "Plectranthus amboinicus",
+    "common_name": "Karpooravalli",
+    "emoji": "🌿",
+    "category": "Herbs",
+    "care_level": "easy",
+    "description": "Known as Karpooravalli, Omavalli, or Cuban Oregano, this thick-leaved aromatic herb is highly valued in South Indian homes for cough and cold remedies. Grows fast in warm weather, tolerates partial shade, and is nearly indestructible. Easy to propagate from cuttings — a 4-inch stem in water roots in a week. Bring indoors in winter.",
+    "hardiness_zone_min": 9,
+    "hardiness_zone_max": 12,
+    "states": [
+      "CA",
+      "TX"
+    ],
+    "native_states": [],
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "sun": "partial-shade",
+    "water": "moderate",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "balcony",
+      "indoor",
+      "mixed"
+    ],
+    "tags": [
+      "edible",
+      "medicinal",
+      "fragrant",
+      "container",
+      "south-asian",
+      "shade-tolerant",
+      "easy-propagate"
+    ]
+  },
+  {
+    "scientific_name": "Basella alba",
+    "common_name": "Malabar Spinach",
+    "emoji": "🥬",
+    "category": "Vines",
+    "care_level": "easy",
+    "description": "Tropical climbing vegetable that thrives in Bay Area summers when regular spinach bolts. Grows up to 10 ft on a trellis, producing glossy, thick leaves with a mild spinach flavour. Heat-tolerant and prolific — harvest outer leaves continuously. Red-stemmed variety (Basella rubra) is particularly ornamental. Start from cuttings or seed in May.",
+    "hardiness_zone_min": 7,
+    "hardiness_zone_max": 12,
+    "states": [
+      "CA",
+      "TX"
+    ],
+    "native_states": [],
+    "seasons": [
+      "summer",
+      "fall"
+    ],
+    "sun": "full-sun",
+    "water": "moderate",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "balcony",
+      "mixed"
+    ],
+    "tags": [
+      "edible",
+      "heat-tolerant",
+      "trellis",
+      "south-asian",
+      "container"
+    ]
+  },
+  {
+    "scientific_name": "Moringa oleifera",
+    "common_name": "Moringa",
+    "emoji": "🌳",
+    "category": "Trees",
+    "care_level": "easy",
+    "description": "The 'miracle tree' beloved in South Asian cooking for drumstick pods, leaves, and flowers. Grows 10–20 ft in Bay Area Zone 9+ gardens; dies back to roots in frost but regrows vigorously each spring. Extraordinarily fast-growing — can reach 10 ft in one season. Harvest young pods (drumsticks) and leaves regularly. Drought-tolerant once established.",
+    "hardiness_zone_min": 9,
+    "hardiness_zone_max": 12,
+    "states": [
+      "CA",
+      "TX"
+    ],
+    "native_states": [],
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "mixed"
+    ],
+    "tags": [
+      "edible",
+      "drought-tolerant",
+      "fast-growing",
+      "medicinal",
+      "south-asian",
+      "tropical"
+    ]
+  },
+  {
+    "scientific_name": "Momordica charantia",
+    "common_name": "Bitter Melon",
+    "emoji": "🥒",
+    "category": "Vines",
+    "care_level": "moderate",
+    "description": "Climbing tropical vegetable producing distinctively bitter, nutritious gourds beloved in South and Southeast Asian cooking. Needs a sturdy trellis and long, hot summer — Bay Area gets just enough heat to produce well. Start seeds indoors in April, transplant after last frost. Harvest when fruit is firm and bright green; letting it ripen to orange gives milder flavour.",
+    "hardiness_zone_min": 9,
+    "hardiness_zone_max": 12,
+    "states": [
+      "CA",
+      "TX"
+    ],
+    "native_states": [],
+    "seasons": [
+      "summer"
+    ],
+    "sun": "full-sun",
+    "water": "moderate",
+    "beginner_friendly": false,
+    "garden_types": [
+      "backyard",
+      "mixed"
+    ],
+    "tags": [
+      "edible",
+      "heat-tolerant",
+      "trellis",
+      "south-asian",
+      "medicinal"
+    ]
+  },
+  {
+    "scientific_name": "Plumeria rubra",
+    "common_name": "Plumeria",
+    "emoji": "🌸",
+    "category": "Tropicals",
+    "care_level": "moderate",
+    "description": "Iconic tropical with intensely fragrant flowers in white, yellow, pink, and red. Thrives in Bay Area Zone 9 summers when given a warm, sheltered spot — south-facing wall is ideal. Completely deciduous in winter; move containers under cover if hard frost forecast. Avoid overwatering (the #1 killer). Tip cuttings root easily in summer. Community Houzz discussion at houzz.com/discussions/2088371 has great Zone 9 tips.",
+    "hardiness_zone_min": 9,
+    "hardiness_zone_max": 12,
+    "states": [
+      "CA",
+      "TX"
+    ],
+    "native_states": [],
+    "seasons": [
+      "summer",
+      "fall"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": false,
+    "garden_types": [
+      "backyard",
+      "balcony",
+      "mixed"
+    ],
+    "tags": [
+      "fragrant",
+      "tropical",
+      "drought-tolerant",
+      "container",
+      "statement-plant"
+    ]
+  },
+  {
+    "scientific_name": "Portulaca oleracea",
+    "common_name": "Purslane",
+    "emoji": "🌿",
+    "category": "Vegetables",
+    "care_level": "easy",
+    "description": "Edible succulent that most gardeners pull as a weed — but it's one of the most nutritious plants you can eat, rich in omega-3 fatty acids. Lemony, crisp leaves are excellent in salads, stir-fries, and raitas. Grows in any soil, needs no care, and produces prolifically in summer heat. Let it self-seed and you'll never be without it.",
+    "hardiness_zone_min": 5,
+    "hardiness_zone_max": 11,
+    "states": [
+      "CA",
+      "TX"
+    ],
+    "native_states": [],
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "balcony",
+      "mixed"
+    ],
+    "tags": [
+      "edible",
+      "drought-tolerant",
+      "heat-tolerant",
+      "self-seeding",
+      "medicinal",
+      "forage"
+    ]
+  },
+  {
+    "scientific_name": "Amaranthus tricolor",
+    "common_name": "Amaranth",
+    "emoji": "🌾",
+    "category": "Vegetables",
+    "care_level": "easy",
+    "description": "Spectacular dual-purpose plant grown for both ornamental foliage and edible leaves and seeds. Young leaves are used like spinach in South Asian dishes (chaulai saag); grain varieties produce high-protein seeds. Direct sow in warm soil after last frost; grows fast in summer heat. Also called Rajgira — the grain is used in fasting foods across India.",
+    "hardiness_zone_min": 4,
+    "hardiness_zone_max": 11,
+    "states": [
+      "CA",
+      "TX"
+    ],
+    "native_states": [],
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "sun": "full-sun",
+    "water": "low",
+    "beginner_friendly": true,
+    "garden_types": [
+      "backyard",
+      "front-yard",
+      "mixed"
+    ],
+    "tags": [
+      "edible",
+      "drought-tolerant",
+      "heat-tolerant",
+      "seed-harvest",
+      "south-asian",
+      "ornamental"
+    ]
+  }
+]

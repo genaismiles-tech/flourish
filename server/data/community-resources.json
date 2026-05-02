@@ -1,0 +1,138 @@
+[
+  {
+    "name": "Sunnyvale Recycling & Compost Center",
+    "type": "government",
+    "resource_type": "compost",
+    "region": "bay-area",
+    "description": "Free compost and mulch for Sunnyvale residents. Drop off garden waste and pick up finished compost — no ID check required for pickup. Great for enriching Bay Area clay soils.",
+    "states": ["CA"],
+    "url": "https://sunnyvale.ca.gov/property/recycling/getrid/center.htm",
+    "specialty": ["free compost", "mulch", "green waste drop-off"],
+    "cities": ["Sunnyvale", "Santa Clara", "San Jose"]
+  },
+  {
+    "name": "Valley Water Landscape Rebate Program",
+    "type": "government",
+    "resource_type": "rebate",
+    "region": "bay-area",
+    "description": "Up to $3,000 residential / $100,000 commercial rebates for converting lawn to drought-tolerant landscaping, installing drip irrigation, or capturing rainwater. Santa Clara County residents only.",
+    "states": ["CA"],
+    "url": "https://www.valleywater.org/saving-water/rebates-surveys/landscape-rebates",
+    "phone": "(408) 630-2554",
+    "specialty": ["lawn replacement", "drip irrigation", "rainwater capture", "free irrigation survey"],
+    "cities": ["San Jose", "Sunnyvale", "Cupertino", "Santa Clara", "Mountain View", "Palo Alto", "Campbell", "Los Gatos", "Milpitas", "Saratoga"]
+  },
+  {
+    "name": "Guadalupe River Park & Gardens",
+    "type": "community",
+    "resource_type": "community-garden",
+    "region": "bay-area",
+    "description": "Non-profit park with heritage rose garden, historic orchard, and community garden. Hosts plant swaps, succulent workshops, and volunteer days. Great place to connect with Bay Area gardeners.",
+    "states": ["CA"],
+    "url": "https://www.grpg.org",
+    "phone": "(408) 298-7657",
+    "specialty": ["heritage roses", "community garden", "plant swaps", "workshops", "volunteer opportunities"],
+    "cities": ["San Jose"]
+  },
+  {
+    "name": "Indian Plants N Seeds",
+    "type": "online-nursery",
+    "resource_type": "online-seeds",
+    "region": null,
+    "description": "One-stop online shop for South Asian vegetable and herb seeds — tulsi, ajwain, karela, kothimeera, and dozens of Indian variety brinjal, chilli, and leafy greens. Ships to all US states.",
+    "states": ["CA", "TX"],
+    "url": "https://indianplantsnseeds.com",
+    "specialty": ["tulsi", "ajwain", "karela", "kothimeera", "indian vegetables", "south asian herbs", "brinjal varieties"],
+    "tags": ["south-asian"]
+  },
+  {
+    "name": "Seeds of India",
+    "type": "online-nursery",
+    "resource_type": "online-seeds",
+    "region": null,
+    "description": "25-year-old company shipping non-GMO South Asian seeds and live plants including curry leaf, jasmine, and seasonal vegetables. Same/next-day shipping to continental US.",
+    "states": ["CA", "TX"],
+    "url": "https://www.seedsofindia.com",
+    "specialty": ["curry leaf plants", "jasmine", "non-GMO indian seeds", "live plants", "culinary herbs"],
+    "tags": ["south-asian"]
+  },
+  {
+    "name": "Neem Tree Farms",
+    "type": "online-nursery",
+    "resource_type": "online-plants",
+    "region": null,
+    "description": "America's oldest neem company — ships living neem trees and Ayurvedic plants alongside cold-pressed neem oil for natural pest control. Excellent source for hard-to-find Indian medicinal plants.",
+    "states": ["CA", "TX"],
+    "url": "https://neemtreefarms.com",
+    "phone": "(877) 500-6336",
+    "specialty": ["neem trees", "ayurvedic plants", "neem oil", "indian medicinal plants", "natural pest control"],
+    "tags": ["south-asian", "medicinal"]
+  },
+  {
+    "name": "Ten Mile Creek Nursery",
+    "type": "online-nursery",
+    "resource_type": "online-plants",
+    "region": null,
+    "description": "The most comprehensive US source for lotus rhizomes — over 100 varieties shipped bare-root nationwide. Certified sustainable through Union for Ethical Biotrade.",
+    "states": ["CA", "TX"],
+    "url": "https://tenmilecreeknursery.com",
+    "specialty": ["lotus", "aquatic plants", "lotus rhizomes", "pond plants"],
+    "tags": ["spiritual", "aquatic"]
+  },
+  {
+    "name": "Petaluma Seed Bank (Baker Creek)",
+    "type": "online-nursery",
+    "resource_type": "seed-bank",
+    "region": "bay-area",
+    "description": "Northern California outpost of Baker Creek Heirloom Seeds — the largest heirloom seed collection in the US. Drop in for rare heirloom varieties or order online. Great for preserving South Asian food traditions with authentic seed varieties.",
+    "states": ["CA"],
+    "url": "https://www.rareseeds.com/petaluma-seed-bank",
+    "specialty": ["heirloom seeds", "rare varieties", "open-pollinated", "south asian vegetables"],
+    "cities": ["Petaluma"],
+    "tags": ["heirloom", "rare-seeds"]
+  },
+  {
+    "name": "Logee's Plants",
+    "type": "online-nursery",
+    "resource_type": "online-plants",
+    "region": null,
+    "description": "Specialty online nursery for tropical and sub-tropical plants — an excellent source for citrus, plumeria, hibiscus, and South Asian fruit trees that are hard to find locally.",
+    "states": ["CA", "TX"],
+    "url": "https://logees.com",
+    "specialty": ["tropicals", "citrus", "plumeria", "hibiscus", "rare fruit trees", "south asian fruits"],
+    "tags": ["tropical", "south-asian"]
+  },
+  {
+    "name": "Vivasayi Garden",
+    "type": "online-nursery",
+    "resource_type": "online-plants",
+    "region": null,
+    "description": "Online source for South Indian medicinal and culinary plants including karpooravalli (omavalli), tulsi varieties, and hard-to-find Indian herbs. Ships live plants.",
+    "states": ["CA", "TX"],
+    "url": "https://vivasayigarden.com",
+    "specialty": ["karpooravalli", "omavalli", "tulsi", "south indian herbs", "medicinal plants"],
+    "tags": ["south-asian", "medicinal"]
+  },
+  {
+    "name": "Grow Organic Club",
+    "type": "community",
+    "resource_type": "community-network",
+    "region": null,
+    "description": "Bay Area-rooted online community for organic and home gardeners. Plant swaps, seed sharing, growing tips, and connections with local growers. Great for sourcing cuttings from other Bay Area gardeners.",
+    "states": ["CA"],
+    "url": "https://groworganicclub.com",
+    "specialty": ["plant swaps", "seed sharing", "organic gardening", "community"],
+    "tags": ["community", "organic"]
+  },
+  {
+    "name": "Houzz Zone 9 Plumeria Forum",
+    "type": "community",
+    "resource_type": "community-tips",
+    "region": "bay-area",
+    "description": "Active community discussion with Bay Area gardeners sharing real tips on growing plumeria in Northern CA Zone 9 — which varieties survive, overwintering strategies, and where to source plants locally.",
+    "states": ["CA"],
+    "url": "https://www.houzz.com/discussions/2088371/plumeria-in-northern-ca-zone-9",
+    "specialty": ["plumeria", "zone 9", "northern california", "overwintering"],
+    "tags": ["tropical", "zone-9"]
+  }
+]

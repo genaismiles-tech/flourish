@@ -1,0 +1,215 @@
+[
+  {
+    "name": "God's Little Acre Nursery",
+    "type": "specialty",
+    "region": "bay-area",
+    "description": "Locally owned San Jose tree nursery serving the community for 30+ years. Specialises in grafted fruit trees including rare Persian and guava varieties at competitive prices. A go-to for the South Asian gardening community in the South Bay.",
+    "states": ["CA"],
+    "phone": "(408) 927-8868",
+    "address": "19810 Almaden Rd, San Jose, CA 95120",
+    "specialty": ["grafted fruit trees", "persian fruits", "guava", "tropical fruits", "fertilizers"],
+    "cities": ["San Jose", "Almaden"]
+  },
+  {
+    "name": "Yamagami's Garden Center",
+    "type": "specialty",
+    "region": "bay-area",
+    "description": "Full-service Cupertino garden centre with deep Bay Area expertise, a strong edibles section, bonsai, succulents, and regular educational classes. Trusted by South Bay gardeners for decades.",
+    "states": ["CA"],
+    "website": "yamagamis.com",
+    "phone": "(408) 252-3347",
+    "specialty": ["fruit trees", "edibles", "herbs", "succulents", "bonsai", "drought-tolerant", "houseplants"],
+    "cities": ["Cupertino", "San Jose", "Sunnyvale"]
+  },
+  {
+    "name": "Greenfield Nursery",
+    "type": "specialty",
+    "region": "bay-area",
+    "description": "Family-owned 17-acre nursery in San Martin with a huge selection of palms, fruit trees, Japanese maples, and deer-resistant plants. Delivery available throughout the Bay Area.",
+    "states": ["CA"],
+    "website": "greenfieldnursery.us",
+    "phone": "(408) 686-1212",
+    "specialty": ["palm trees", "fruit trees", "japanese maples", "deer-resistant", "drought-resistant", "native plants"],
+    "cities": ["San Martin", "Morgan Hill", "Gilroy"]
+  },
+  {
+    "name": "West Valley Arborists",
+    "type": "arborist",
+    "region": "bay-area",
+    "description": "South Bay tree care specialists for pruning, removal, and health assessment. Call for advice on managing large trees or identifying tree disease issues.",
+    "states": ["CA"],
+    "phone": "(408) 866-1148",
+    "specialty": ["tree pruning", "tree removal", "tree health", "arborist consultation"],
+    "cities": ["San Jose", "Campbell", "Los Gatos", "Santa Clara"]
+  },
+  {
+    "name": "Annie's Annuals & Perennials",
+    "type": "specialty",
+    "region": "bay-area",
+    "description": "Beloved Bay Area nursery specialising in heirloom and hard-to-find plants. Outstanding for adding character and rarity to any garden.",
+    "states": ["CA"],
+    "website": "anniesannuals.com",
+    "specialty": ["heirloom", "unusual perennials", "cottage garden", "wildflowers"],
+    "cities": ["Richmond", "Oakland", "Berkeley"]
+  },
+  {
+    "name": "Sloat Garden Center",
+    "type": "nursery-chain",
+    "region": "bay-area",
+    "description": "Bay Area's trusted local garden chain with strong expertise in NorCal growing conditions and a serious commitment to organics.",
+    "states": ["CA"],
+    "website": "sloatgardens.com",
+    "specialty": ["bay area natives", "organic", "edibles", "roses"],
+    "cities": ["San Francisco", "Marin", "Berkeley", "Oakland", "Palo Alto"]
+  },
+  {
+    "name": "Berkeley Horticultural Nursery",
+    "type": "specialty",
+    "region": "bay-area",
+    "description": "A Bay Area institution since 1923. Rare plants, expert staff, and selection perfectly calibrated for the Bay's microclimates.",
+    "states": ["CA"],
+    "website": "berkeleyhort.com",
+    "specialty": ["rare plants", "ferns", "shade plants", "bay area climate"],
+    "cities": ["Berkeley"]
+  },
+  {
+    "name": "Armstrong Garden Centers",
+    "type": "nursery-chain",
+    "region": "socal",
+    "description": "California's largest regional nursery chain with expert staff, wide plant selection, and free gardening classes. Great for all skill levels.",
+    "states": ["CA"],
+    "website": "armstronggarden.com",
+    "specialty": ["roses", "california natives", "vegetables", "succulents"],
+    "cities": ["Los Angeles", "San Diego", "Riverside", "Orange County"]
+  },
+  {
+    "name": "Green Thumb Nursery",
+    "type": "nursery-chain",
+    "region": "socal",
+    "description": "Family-owned SoCal institution with outstanding California native plants, fruit trees, and vegetables at honest prices.",
+    "states": ["CA"],
+    "website": "greenthumb.com",
+    "specialty": ["california natives", "fruit trees", "organic", "vegetables"],
+    "cities": ["Canoga Park", "Santa Paula", "San Marcos", "Ventura", "Carpinteria"]
+  },
+  {
+    "name": "Theodore Payne Foundation",
+    "type": "specialty",
+    "region": "socal",
+    "description": "Non-profit nursery dedicated to California native plants. The definitive source for drought-tolerant CA natives and wildflower seed.",
+    "states": ["CA"],
+    "website": "theodorepayne.org",
+    "specialty": ["california natives only", "drought-tolerant", "wildflowers", "habitat"],
+    "cities": ["Sun Valley", "Los Angeles"]
+  },
+  {
+    "name": "Walter Andersen Nursery",
+    "type": "specialty",
+    "region": "san-diego",
+    "description": "San Diego's full-service nursery since 1928. Deep expertise in coastal and inland SD climate — trusted for three generations.",
+    "states": ["CA"],
+    "website": "walterandersen.com",
+    "specialty": ["tropical", "california natives", "fruit trees", "succulents"],
+    "cities": ["San Diego", "Poway"]
+  },
+  {
+    "name": "Las Pilitas Nursery",
+    "type": "specialty",
+    "region": "socal",
+    "description": "California native plant specialists with unmatched depth. Exceptional for ecological restoration, wildlife habitat, and drought-resilient gardens.",
+    "states": ["CA"],
+    "website": "laspilitas.com",
+    "specialty": ["california natives only", "restoration", "wildlife habitat", "seeds"],
+    "cities": ["Escondido", "Santa Margarita"]
+  },
+  {
+    "name": "Roger's Gardens",
+    "type": "specialty",
+    "region": "socal",
+    "description": "Award-winning OC nursery famous for exceptional seasonal displays and rare specialty plants. A destination for serious gardeners.",
+    "states": ["CA"],
+    "website": "rogersgardens.com",
+    "specialty": ["seasonal color", "rare plants", "succulents", "tropicals"],
+    "cities": ["Corona del Mar", "Newport Beach"]
+  },
+  {
+    "name": "Barton Springs Nursery",
+    "type": "specialty",
+    "region": "austin",
+    "description": "Austin's premier organic nursery since 1991. Outstanding Texas native plant selection and sustainable gardening expertise.",
+    "states": ["TX"],
+    "website": "bartonspringsnursery.net",
+    "specialty": ["texas natives", "organic", "edibles", "perennials"],
+    "cities": ["Austin"]
+  },
+  {
+    "name": "The Natural Gardener",
+    "type": "specialty",
+    "region": "austin",
+    "description": "John Dromgoole's legendary Austin nursery. The premier destination for natural growing methods, heirloom seeds, and Central Texas know-how.",
+    "states": ["TX"],
+    "website": "naturalgardeneraustin.com",
+    "specialty": ["organic", "heirloom vegetables", "texas natives", "compost"],
+    "cities": ["Austin"]
+  },
+  {
+    "name": "Shoal Creek Nursery",
+    "type": "specialty",
+    "region": "austin",
+    "description": "Austin neighbourhood nursery with a well-curated selection of plants that actually thrive in Central Texas. Friendly, expert staff.",
+    "states": ["TX"],
+    "website": "shoalcreeknursery.com",
+    "specialty": ["central texas", "butterfly garden", "tropicals", "natives"],
+    "cities": ["Austin"]
+  },
+  {
+    "name": "SummerWinds Nursery",
+    "type": "nursery-chain",
+    "region": "austin",
+    "description": "Full-service garden centres with a good variety of plants and gardening supplies, plus knowledgeable staff for everyday garden questions.",
+    "states": ["TX"],
+    "website": "summerwinds.com",
+    "specialty": ["seasonal color", "vegetables", "succulents", "trees"],
+    "cities": ["Austin", "Pflugerville", "Plano", "Cedar Park"]
+  },
+  {
+    "name": "Buchanan's Native Plants",
+    "type": "specialty",
+    "region": "houston",
+    "description": "Houston's favourite native plant nursery with deep expertise in Gulf Coast natives and ecological landscaping for the humid south.",
+    "states": ["TX"],
+    "website": "buchanansplants.com",
+    "specialty": ["houston natives", "gulf coast", "butterfly plants", "ecological"],
+    "cities": ["Houston", "Heights"]
+  },
+  {
+    "name": "Rainbow Gardens",
+    "type": "specialty",
+    "region": "san-antonio",
+    "description": "San Antonio's landmark independent nursery with 5 acres of plants. Trusted for South Texas growing advice for over 40 years.",
+    "states": ["TX"],
+    "website": "rainbowgardenssa.com",
+    "specialty": ["south texas", "tropicals", "succulents", "seasonal color"],
+    "cities": ["San Antonio"]
+  },
+  {
+    "name": "North Haven Gardens",
+    "type": "specialty",
+    "region": "dallas",
+    "description": "Dallas's beloved independent nursery since 1951. Exceptional plant knowledge, rare selections, and the best rose stock in DFW.",
+    "states": ["TX"],
+    "website": "nhg.com",
+    "specialty": ["dallas-fort worth", "roses", "rare plants", "herbs"],
+    "cities": ["Dallas", "North Dallas"]
+  },
+  {
+    "name": "Calloway's Nursery",
+    "type": "nursery-chain",
+    "region": "dallas",
+    "description": "North Texas regional chain with deep DFW growing knowledge. Great selection of trees, shrubs, and plants adapted to North Texas clay.",
+    "states": ["TX"],
+    "website": "calloways.com",
+    "specialty": ["trees", "shrubs", "seasonal color", "texas adapted"],
+    "cities": ["Dallas", "Fort Worth", "Plano", "Arlington", "Frisco"]
+  }
+]
