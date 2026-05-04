@@ -759,6 +759,7 @@
   align-items: center;
   gap: 5px;
   background: rgba(0, 0, 0, 0.55);
+  -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
   border: 1px solid rgba(255,255,255,0.25);
   color: #fff;

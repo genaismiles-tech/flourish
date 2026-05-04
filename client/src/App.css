@@ -1,11 +1,16 @@
 .app {
   min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
+  background: var(--bg);
 }
 
 /* ── Header ── */
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
   background: linear-gradient(135deg, #14532d 0%, #166534 50%, #15803d 100%);
   padding: 1.25rem 2rem;
   box-shadow: 0 2px 20px rgba(20, 83, 45, 0.3);
@@ -154,6 +159,7 @@
 .main {
   flex: 1;
   padding: 2.5rem 1.5rem;
+  background: var(--bg);
 }
 
 .container {
@@ -320,6 +326,7 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  background: var(--bg);
 }
 
 .capture-header {
@@ -457,6 +464,7 @@
   font-weight: 500;
   color: #14532d;
   transition: all 0.15s;
+  -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
   font-family: inherit;
   cursor: pointer;
