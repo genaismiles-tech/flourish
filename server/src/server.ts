@@ -1,4 +1,5 @@
 import "dotenv/config";
+import bcrypt from "bcryptjs";
 import cors from "cors";
 import express from "express";
 import fs from "fs";
@@ -7,10 +8,17 @@ import path from "path";
 import { fileURLToPath } from "url";
 import { lookupPlants, getZone, getSeason, detectState } from "./db.js";
 import { identifyWithINat, isINatConfigured } from "./inaturalist.js";
-import { analyzeGardenWithGemini, diagnoseWithGemini, chatWithGemini, isGeminiConfigured } from "./gemini.js";
+import { analyzeGardenWithGemini, diagnoseWithGemini, chatWithGemini, isGeminiConfigured, getPlantPricesWithGemini } from "./gemini.js";
 import { findLocalShops } from "./shopLookup.js";
 import { buildGardenAnalysis, buildDiagnosis } from "./gardenAnalyzer.js";
 import { consume, quotaSnapshot } from "./rateLimiter.js";
+import {
+  createUser, getUserByEmail, getUserById,
+  upsertProfile, getProfile,
+  addHistory, listHistory, getHistoryItem, deleteHistoryItem,
+  addPlanItem, listPlan, updatePlanStatus, deletePlanItem, planItemExists,
+} from "./database.js";
+import { signToken, requireAuth, type AuthRequest } from "./auth.js";
 
 const app = express();
 const upload = multer({ storage: multer.memoryStorage(), limits: { fileSize: 20 * 1024 * 1024 } });
@@ -133,6 +141,76 @@ function apiErrorMessage(err: unknown): string {
 const RATE_LIMIT_MSG = "Our plant analysis service is a little busy right now. Please try again in a few hours.";
 const GENERIC_ERR_MSG = "Our plant analysis service is temporarily unavailable. Please try again in a little while.";
 
+// ── Auth ──────────────────────────────────────────────────────────────────────
+app.post("/api/auth/register", async (req, res) => {
+  const { email, password } = req.body as { email?: string; password?: string };
+  if (!email || !password) { res.status(400).json({ error: "Email and password are required" }); return; }
+  if (password.length < 6) { res.status(400).json({ error: "Password must be at least 6 characters" }); return; }
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { res.status(400).json({ error: "Invalid email address" }); return; }
+
+  if (getUserByEmail(email.toLowerCase())) {
+    res.status(409).json({ error: "An account with this email already exists" });
+    return;
+  }
+  const hash = await bcrypt.hash(password, 10);
+  const user = createUser(email.toLowerCase(), hash);
+  res.status(201).json({ token: signToken(user.id), user: { id: user.id, email: user.email } });
+});
+
+app.post("/api/auth/login", async (req, res) => {
+  const { email, password } = req.body as { email?: string; password?: string };
+  if (!email || !password) { res.status(400).json({ error: "Email and password are required" }); return; }
+
+  const user = getUserByEmail(email.toLowerCase());
+  if (!user || !(await bcrypt.compare(password, user.password_hash))) {
+    res.status(401).json({ error: "Incorrect email or password" });
+    return;
+  }
+  const profile = getProfile(user.id);
+  res.json({ token: signToken(user.id), user: { id: user.id, email: user.email }, profile });
+});
+
+app.get("/api/auth/me", requireAuth, (req, res) => {
+  const r = req as AuthRequest;
+  const user = getUserById(r.userId!);
+  const profile = getProfile(r.userId!);
+  res.json({ user: { id: user!.id, email: user!.email }, profile });
+});
+
+// ── User profile ──────────────────────────────────────────────────────────────
+app.put("/api/user/profile", requireAuth, (req, res) => {
+  const r = req as AuthRequest;
+  upsertProfile(r.userId!, req.body);
+  res.json({ ok: true });
+});
+
+// ── History ───────────────────────────────────────────────────────────────────
+app.get("/api/user/history", requireAuth, (req, res) => {
+  const r = req as AuthRequest;
+  res.json({ history: listHistory(r.userId!) });
+});
+
+app.get("/api/user/history/:id", requireAuth, (req, res) => {
+  const r = req as AuthRequest;
+  const item = getHistoryItem(Number(req.params.id), r.userId!);
+  if (!item) { res.status(404).json({ error: "Not found" }); return; }
+  res.json({ id: item.id, type: item.type, title: item.title, created_at: item.created_at, result: JSON.parse(item.result_json) });
+});
+
+app.post("/api/user/history", requireAuth, (req, res) => {
+  const r = req as AuthRequest;
+  const { type, title, result } = req.body as { type?: string; title?: string; result?: object };
+  if (!type || !title || !result) { res.status(400).json({ error: "type, title, result required" }); return; }
+  const id = addHistory(r.userId!, type, title, result);
+  res.json({ id });
+});
+
+app.delete("/api/user/history/:id", requireAuth, (req, res) => {
+  const r = req as AuthRequest;
+  const ok = deleteHistoryItem(Number(req.params.id), r.userId!);
+  res.json({ ok });
+});
+
 // ── /api/analyze-garden ───────────────────────────────────────────────────────
 app.post("/api/analyze-garden", upload.single("image"), async (req, res) => {
   if (!req.file) { res.status(400).json({ error: "No image provided" }); return; }
@@ -209,18 +287,34 @@ app.post("/api/plant-suggestions", async (req, res) => {
   if (!location) { res.status(400).json({ error: "Location is required" }); return; }
 
   try {
+    const state = detectState(location as string);
     const zone = getZone(location as string);
     const season = getSeason();
-    const results = lookupPlants({
-      state: detectState(location as string),
-      zone,
-      experience: (experience as string) || "beginner",
-      gardenType: (gardenType as string) || "mixed",
-      preferences: Array.isArray(plantPreferences) ? (plantPreferences as string[]) : [],
-      season,
-      limit: 10,
-    });
-    res.json(results);
+    const preferences: string[] = Array.isArray(plantPreferences) ? (plantPreferences as string[]) : [];
+
+    const [plants, shopResults] = await Promise.all([
+      Promise.resolve(lookupPlants({
+        state,
+        zone,
+        experience: (experience as string) || "beginner",
+        gardenType: (gardenType as string) || "mixed",
+        preferences,
+        season,
+        limit: 10,
+      })),
+      findLocalShops(location as string, state, preferences),
+    ]);
+
+    const shops = shopResults.map((s) => ({
+      name: s.name,
+      type: s.shopType,
+      description: s.description,
+      address: s.address ?? (s.phone ? `📞 ${s.phone}` : undefined),
+      distance: s.distance,
+      url: s.mapUrl ?? (s.website ? `https://${s.website}` : undefined),
+    }));
+
+    res.json({ plants, shops });
   } catch (err) {
     console.error("Plant suggestions error:", err);
     res.status(500).json({ error: "Could not load plant suggestions." });
@@ -303,6 +397,171 @@ app.post("/api/chat", async (req, res) => {
     console.error("Chat error:", err);
     res.status(500).json({ error: GENERIC_ERR_MSG });
   }
+});
+
+// ── Local price fallback (no API needed) ────────────────────────────────────
+const CATEGORY_PRICES: Record<string, { bigBox: string; nursery: string; online: string; sizes: string[] }> = {
+  "Flowers":    { bigBox: "$3 – $8",  nursery: "$6 – $18",  online: "$4 – $15 + shipping", sizes: ['6-pack', '4" pot', '1-gallon'] },
+  "Herbs":      { bigBox: "$3 – $6",  nursery: "$5 – $12",  online: "$3 – $12 + shipping", sizes: ['4" pot', '6" pot'] },
+  "Vegetables": { bigBox: "$3 – $7",  nursery: "$4 – $15",  online: "$2 – $10 + shipping", sizes: ['6-pack', '4" pot', 'seed packet'] },
+  "Shrubs":     { bigBox: "$12 – $35", nursery: "$18 – $60", online: "$15 – $50 + shipping", sizes: ['1-gallon', '3-gallon', '5-gallon'] },
+  "Trees":      { bigBox: "$25 – $80", nursery: "$40 – $150", online: "$20 – $80 + shipping", sizes: ['1-gallon', '5-gallon', '10-gallon'] },
+  "Succulents": { bigBox: "$4 – $12", nursery: "$8 – $25",  online: "$6 – $20 + shipping", sizes: ['2" pot', '4" pot', '6" pot'] },
+  "Grasses":    { bigBox: "$8 – $20", nursery: "$12 – $35", online: "$8 – $30 + shipping", sizes: ['1-gallon', '3-gallon'] },
+  "Vines":      { bigBox: "$10 – $20", nursery: "$15 – $40", online: "$8 – $30 + shipping", sizes: ['1-gallon', '3-gallon'] },
+};
+const DEFAULT_PRICES = { bigBox: "$5 – $20", nursery: "$10 – $35", online: "$6 – $25 + shipping", sizes: ['1-gallon', '3-gallon'] };
+
+function localPriceFallback(
+  plantName: string,
+  category: string,
+  location: string,
+  localShops: Array<{ name: string; type: string }>
+) {
+  const p = CATEGORY_PRICES[category] ?? DEFAULT_PRICES;
+  return {
+    prices: [
+      {
+        retailerType: "Big Box Store",
+        examples: "Home Depot, Lowe's, Walmart",
+        priceRange: p.bigBox,
+        sizes: p.sizes.slice(0, 2),
+        availability: "Spring – Summer",
+        notes: "Wide availability in spring. Stock varies — call ahead for specific varieties.",
+        badge: "Best Value",
+      },
+      {
+        retailerType: "Local Independent Nursery",
+        examples: "",
+        priceRange: p.nursery,
+        sizes: p.sizes.slice(-2),
+        availability: "Year-round (best selection spring)",
+        notes: "Higher quality, expert staff, better variety selection.",
+        badge: "Best Quality",
+      },
+      {
+        retailerType: "Online Retailer",
+        examples: "Amazon, Etsy, specialty sites",
+        priceRange: p.online,
+        sizes: ["Seed packet", "Bare root", p.sizes[0]],
+        availability: "Year-round",
+        notes: "Rare and heritage varieties available. Check reviews and seller ratings.",
+        badge: "Widest Selection",
+      },
+    ],
+    localShopEstimates: localShops.slice(0, 3).map((s) => ({
+      shopName: s.name,
+      priceRange: p.nursery,
+      notes: `Call ahead to confirm availability of ${plantName}.`,
+    })),
+    seasonalTip: `Spring is generally the best time to find ${plantName} in ${location} with the widest selection and freshest stock.`,
+    bestTimeToBuy: "March – May",
+  };
+}
+
+// ── /api/plant-search ────────────────────────────────────────────────────────
+app.get("/api/plant-search", async (req, res) => {
+  const q = ((req.query.q as string) ?? "").trim();
+  if (q.length < 2) { res.json({ results: [] }); return; }
+  try {
+    // ancestor_id=47126 = Plantae — limits results to plants only
+    const r = await fetch(
+      `https://api.inaturalist.org/v1/taxa?q=${encodeURIComponent(q)}&rank=species&per_page=8&ancestor_id=47126`,
+      { headers: { Accept: "application/json" } }
+    );
+    const data = await r.json() as {
+      results?: Array<{
+        name: string;
+        preferred_common_name?: string;
+        iconic_taxon_name?: string;
+        default_photo?: { square_url?: string };
+      }>;
+    };
+    const results = (data.results ?? [])
+      .filter((t) => !t.iconic_taxon_name || t.iconic_taxon_name === "Plantae")
+      .slice(0, 7)
+      .map((t) => ({
+        scientificName: t.name,
+        commonName: t.preferred_common_name ?? t.name,
+        photoUrl: t.default_photo?.square_url ?? null,
+      }));
+    res.json({ results });
+  } catch {
+    res.json({ results: [] });
+  }
+});
+
+// ── /api/plant-prices ─────────────────────────────────────────────────────────
+app.post("/api/plant-prices", async (req, res) => {
+  const { plantName, plantCategory, location, localShops } = req.body as {
+    plantName?: string;
+    plantCategory?: string;
+    location?: string;
+    localShops?: Array<{ name: string; type: string }>;
+  };
+  if (!plantName || !location) {
+    res.status(400).json({ error: "plantName and location required" });
+    return;
+  }
+
+  const shops = Array.isArray(localShops) ? localShops : [];
+
+  if (HAS_GEMINI && consume("gemini")) {
+    try {
+      const state = detectState(location);
+      const prices = await getPlantPricesWithGemini(
+        plantName,
+        plantCategory ?? "Plant",
+        location,
+        state ?? location,
+        shops
+      );
+      res.json(prices);
+      return;
+    } catch (err) {
+      console.warn("Gemini price lookup failed, using local fallback:", (err as Error).message);
+    }
+  }
+
+  // Fallback: local price matrix
+  res.json(localPriceFallback(plantName, plantCategory ?? "Plant", location, shops));
+});
+
+// ── /api/user/plan ─────────────────────────────────────────────────────────────
+app.get("/api/user/plan", requireAuth, (req, res) => {
+  const r = req as AuthRequest;
+  res.json({ plan: listPlan(r.userId!) });
+});
+
+app.post("/api/user/plan", requireAuth, (req, res) => {
+  const r = req as AuthRequest;
+  const { plantName, plantEmoji, plantCategory, nurseryName, nurseryType, priceEstimate } = req.body as {
+    plantName?: string; plantEmoji?: string; plantCategory?: string;
+    nurseryName?: string; nurseryType?: string; priceEstimate?: string;
+  };
+  if (!plantName) { res.status(400).json({ error: "plantName required" }); return; }
+  if (planItemExists(r.userId!, plantName)) {
+    res.status(409).json({ error: "Already in your plan" });
+    return;
+  }
+  const id = addPlanItem(r.userId!, plantName, plantEmoji ?? "🌱", plantCategory ?? "", nurseryName ?? null, nurseryType ?? null, priceEstimate ?? null);
+  res.status(201).json({ id });
+});
+
+app.put("/api/user/plan/:id", requireAuth, (req, res) => {
+  const r = req as AuthRequest;
+  const { status } = req.body as { status?: string };
+  if (!status || !["planned", "purchased", "planted"].includes(status)) {
+    res.status(400).json({ error: "status must be planned, purchased, or planted" });
+    return;
+  }
+  const ok = updatePlanStatus(Number(req.params.id), r.userId!, status);
+  res.json({ ok });
+});
+
+app.delete("/api/user/plan/:id", requireAuth, (req, res) => {
+  const r = req as AuthRequest;
+  res.json({ ok: deletePlanItem(Number(req.params.id), r.userId!) });
 });
 
 app.get("/api/health", (_req, res) => {

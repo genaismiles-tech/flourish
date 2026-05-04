@@ -1,5 +1,22 @@
 import type { GardenAnalysis, DiagnosisData } from "./gardenAnalyzer.js";
 
+export interface PriceEstimate {
+  retailerType: string;
+  examples?: string;
+  priceRange: string;
+  sizes: string[];
+  availability: string;
+  notes: string;
+  badge?: string;
+}
+
+export interface PlantPriceResponse {
+  prices: PriceEstimate[];
+  localShopEstimates: Array<{ shopName: string; priceRange: string; notes: string }>;
+  seasonalTip: string;
+  bestTimeToBuy: string;
+}
+
 const GEMINI_URL =
   "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent";
 
@@ -129,4 +146,81 @@ Provide step-by-step treatment for each issue found.`;
   const jsonMatch = text.match(/\{[\s\S]*\}/);
   if (!jsonMatch) throw new Error("Gemini returned no JSON");
   return JSON.parse(jsonMatch[0]) as DiagnosisData;
+}
+
+async function geminiTextRequest(prompt: string): Promise<string> {
+  const key = process.env.GEMINI_API_KEY!;
+  const res = await fetch(`${GEMINI_URL}?key=${encodeURIComponent(key)}`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      contents: [{ role: "user", parts: [{ text: prompt }] }],
+      generationConfig: { temperature: 0.3, maxOutputTokens: 2048 },
+    }),
+  });
+  if (!res.ok) {
+    const body = await res.text().catch(() => "");
+    throw new Error(`Gemini ${res.status}: ${body.slice(0, 200)}`);
+  }
+  const data = await res.json() as { candidates: Array<{ content: { parts: Array<{ text: string }> } }> };
+  return data.candidates[0]?.content.parts[0]?.text ?? "";
+}
+
+export async function getPlantPricesWithGemini(
+  plantName: string,
+  category: string,
+  location: string,
+  state: string,
+  localShops: Array<{ name: string; type: string }>
+): Promise<PlantPriceResponse> {
+  const shopsText = localShops.length
+    ? `Local nurseries in the area: ${localShops.map((s) => s.name).join(", ")}.`
+    : "";
+
+  const prompt = `You are a gardening retail expert. Give realistic plant purchase price estimates for "${plantName}" (category: ${category}) for a gardener in ${location}, ${state}.
+${shopsText}
+
+Respond with ONLY valid JSON, no markdown:
+{
+  "prices": [
+    {
+      "retailerType": "Big Box Store",
+      "examples": "Home Depot, Lowe's, Walmart",
+      "priceRange": "$X – $Y",
+      "sizes": ["4\\" pot", "1-gallon"],
+      "availability": "March – June",
+      "notes": "brief note",
+      "badge": "Best Value"
+    },
+    {
+      "retailerType": "Local Independent Nursery",
+      "examples": "",
+      "priceRange": "$X – $Y",
+      "sizes": ["1-gallon", "3-gallon"],
+      "availability": "Year-round",
+      "notes": "brief note",
+      "badge": "Best Quality"
+    },
+    {
+      "retailerType": "Online Retailer",
+      "examples": "Amazon, Etsy, specialty sites",
+      "priceRange": "$X – $Y + shipping",
+      "sizes": ["Seed packet", "Bare root", "Small pot"],
+      "availability": "Year-round",
+      "notes": "brief note",
+      "badge": "Widest Selection"
+    }
+  ],
+  "localShopEstimates": [
+    { "shopName": "Example Nursery", "priceRange": "$X – $Y", "notes": "brief" }
+  ],
+  "seasonalTip": "one sentence about best time to buy in this region",
+  "bestTimeToBuy": "month range e.g. March–May"
+}
+Only include localShopEstimates for shops that were listed (${localShops.map((s) => s.name).join(", ") || "none"}). Be realistic with prices for ${state}.`;
+
+  const text = await geminiTextRequest(prompt);
+  const jsonMatch = text.match(/\{[\s\S]*\}/);
+  if (!jsonMatch) throw new Error("No JSON in price response");
+  return JSON.parse(jsonMatch[0]) as PlantPriceResponse;
 }

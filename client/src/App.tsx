@@ -1,13 +1,17 @@
 import { useCallback, useEffect, useRef, useState } from "react";
+import AuthScreen from "./components/AuthScreen";
 import CameraCapture from "./components/CameraCapture";
 import DiagnosisResult from "./components/DiagnosisResult";
 import GardenAnalysis from "./components/GardenAnalysis";
+import GardenPlanPanel from "./components/GardenPlanPanel";
+import HistoryPanel from "./components/HistoryPanel";
 import Onboarding from "./components/Onboarding";
 import PlantSuggestions from "./components/PlantSuggestions";
 import type {
+  AuthState,
   DiagnosisData,
   GardenAnalysis as GardenAnalysisType,
-  PlantSuggestion,
+  SuggestionsResponse,
   UserProfile,
 } from "./types";
 import "./App.css";
@@ -16,49 +20,55 @@ type Screen =
   | "home"
   | "garden-scan"
   | "garden-result"
-  | "health-check"
   | "health-result"
+  | "health-check"
   | "suggestions";
 
 const PROFILE_KEY = "flourish-profile";
 const TEXT_SIZE_KEY = "flourish-text-size";
+const AUTH_KEY = "flourish-auth";
 
 async function readErrorMessage(res: Response, fallback: string): Promise<string> {
   const ct = res.headers.get("content-type") ?? "";
   if (ct.includes("application/json")) {
-    try {
-      const data = await res.json();
-      return data.error || fallback;
-    } catch {
-      return fallback;
-    }
+    try { const d = await res.json(); return d.error || fallback; }
+    catch { return fallback; }
   }
   return fallback;
 }
 
-function loadProfile(): UserProfile | null {
+function loadLocalProfile(): UserProfile | null {
   try {
     const raw = localStorage.getItem(PROFILE_KEY);
     return raw ? (JSON.parse(raw) as UserProfile) : null;
-  } catch {
-    return null;
-  }
+  } catch { return null; }
 }
 
-function saveProfile(profile: UserProfile) {
+function saveLocalProfile(profile: UserProfile) {
   localStorage.setItem(PROFILE_KEY, JSON.stringify(profile));
 }
 
+function loadAuthState(): AuthState | null {
+  try {
+    const raw = localStorage.getItem(AUTH_KEY);
+    return raw ? (JSON.parse(raw) as AuthState) : null;
+  } catch { return null; }
+}
+
 function getGreeting(): string {
-  const hour = new Date().getHours();
-  if (hour < 12) return "Good morning";
-  if (hour < 17) return "Good afternoon";
+  const h = new Date().getHours();
+  if (h < 12) return "Good morning";
+  if (h < 17) return "Good afternoon";
   return "Good evening";
 }
 
 export default function App() {
-  const [profile, setProfile] = useState<UserProfile | null>(loadProfile);
+  // Auth state — null means "checking", false means "not logged in"
+  const [auth, setAuth] = useState<AuthState | null | false>(null);
+  const [profile, setProfile] = useState<UserProfile | null>(null);
   const [screen, setScreen] = useState<Screen>("home");
+  const [showHistory, setShowHistory] = useState(false);
+  const [showPlan, setShowPlan] = useState(false);
 
   // Capture state
   const [imageFile, setImageFile] = useState<File | null>(null);
@@ -70,7 +80,7 @@ export default function App() {
   // Result state
   const [diagnosis, setDiagnosis] = useState<DiagnosisData | null>(null);
   const [gardenAnalysis, setGardenAnalysis] = useState<GardenAnalysisType | null>(null);
-  const [suggestions, setSuggestions] = useState<PlantSuggestion[] | null>(null);
+  const [suggestions, setSuggestions] = useState<SuggestionsResponse | null>(null);
 
   // Loading / error
   const [loading, setLoading] = useState(false);
@@ -84,15 +94,95 @@ export default function App() {
     document.documentElement.style.fontSize = textLarge ? "20px" : "";
   }, [textLarge]);
 
+  // ── Bootstrap: verify saved token on load ──
+  useEffect(() => {
+    const saved = loadAuthState();
+    if (!saved) { setAuth(false); setProfile(loadLocalProfile()); return; }
+
+    fetch("/api/auth/me", { headers: { Authorization: `Bearer ${saved.token}` } })
+      .then(async (res) => {
+        if (!res.ok) throw new Error("expired");
+        const d = await res.json();
+        setAuth(saved);
+        setProfile(d.profile as UserProfile | null ?? loadLocalProfile());
+      })
+      .catch(() => {
+        localStorage.removeItem(AUTH_KEY);
+        setAuth(false);
+        setProfile(loadLocalProfile());
+      });
+  }, []);
+
+  const authHeaders = () => {
+    const a = auth as AuthState | null;
+    return a ? { Authorization: `Bearer ${a.token}` } : {};
+  };
+
+  // ── Save profile to server (if logged in) and localStorage ──
+  const persistProfile = useCallback((p: UserProfile) => {
+    saveLocalProfile(p);
+    const a = auth as AuthState | null;
+    if (a) {
+      fetch("/api/user/profile", {
+        method: "PUT",
+        headers: { "Content-Type": "application/json", Authorization: `Bearer ${a.token}` },
+        body: JSON.stringify(p),
+      }).catch(() => {});
+    }
+  }, [auth]);
+
+  // ── Save result to history (if logged in) ──
+  const saveHistory = useCallback((type: string, title: string, result: object) => {
+    const a = auth as AuthState | null;
+    if (!a) return;
+    fetch("/api/user/history", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Authorization: `Bearer ${a.token}` },
+      body: JSON.stringify({ type, title, result }),
+    }).catch(() => {});
+  }, [auth]);
+
   const toggleTextSize = () => {
     const next = !textLarge;
     setTextLarge(next);
     localStorage.setItem(TEXT_SIZE_KEY, next ? "large" : "normal");
   };
 
+  // ── Auth handlers ──
+  const handleAuth = (token: string, email: string, serverProfile: object | null) => {
+    const state: AuthState = { token, user: { id: 0, email } };
+    // get the real id from /me — but we can use the token directly
+    fetch("/api/auth/me", { headers: { Authorization: `Bearer ${token}` } })
+      .then((r) => r.json())
+      .then((d) => {
+        const fullState: AuthState = { token, user: d.user };
+        localStorage.setItem(AUTH_KEY, JSON.stringify(fullState));
+        setAuth(fullState);
+        const p = (serverProfile ?? loadLocalProfile()) as UserProfile | null;
+        if (p) { persistProfile(p); }
+        setProfile(p);
+      })
+      .catch(() => {
+        localStorage.setItem(AUTH_KEY, JSON.stringify(state));
+        setAuth(state);
+        setProfile((serverProfile ?? loadLocalProfile()) as UserProfile | null);
+      });
+  };
+
+  const handleGuest = () => {
+    setAuth(false);
+    setProfile(loadLocalProfile());
+  };
+
+  const handleLogout = () => {
+    if (!window.confirm("Sign out of Flourish?")) return;
+    localStorage.removeItem(AUTH_KEY);
+    setAuth(false);
+  };
+
   // ── Onboarding ──
   const handleOnboardingComplete = (newProfile: UserProfile) => {
-    saveProfile(newProfile);
+    persistProfile(newProfile);
     setProfile(newProfile);
     setScreen("home");
   };
@@ -156,6 +246,7 @@ export default function App() {
       const data: GardenAnalysisType = await res.json();
       setGardenAnalysis(data);
       setScreen("garden-result");
+      saveHistory("garden", `Garden — ${profile.location}`, data);
     } catch (err) {
       setError(err instanceof Error ? err.message : "Something went wrong");
     } finally {
@@ -177,6 +268,7 @@ export default function App() {
       const data: DiagnosisData = await res.json();
       setDiagnosis(data);
       setScreen("health-result");
+      saveHistory("health", `Health Check — ${data.plantName}`, data);
     } catch (err) {
       setError(err instanceof Error ? err.message : "Something went wrong");
     } finally {
@@ -203,10 +295,10 @@ export default function App() {
         }),
       });
       if (!res.ok) throw new Error(await readErrorMessage(res, "Failed to get suggestions"));
-      const data: PlantSuggestion[] = await res.json();
+      const data: SuggestionsResponse = await res.json();
       setSuggestions(data);
+      saveHistory("suggestions", `Plant Ideas — ${profile.location}`, data);
     } catch (err) {
-      // Go back home and show error in banner
       setError(err instanceof Error ? err.message : "Something went wrong");
       setScreen("home");
     } finally {
@@ -217,11 +309,8 @@ export default function App() {
   const handleAddPreference = (pref: string) => {
     if (!profile) return;
     if (profile.plantPreferences.includes(pref)) return;
-    const updated: UserProfile = {
-      ...profile,
-      plantPreferences: [...profile.plantPreferences, pref],
-    };
-    saveProfile(updated);
+    const updated: UserProfile = { ...profile, plantPreferences: [...profile.plantPreferences, pref] };
+    persistProfile(updated);
     setProfile(updated);
   };
 
@@ -232,6 +321,20 @@ export default function App() {
     }
   };
 
+  // ── Loading splash while verifying token ──
+  if (auth === null) {
+    return (
+      <div style={{ minHeight: "100dvh", display: "flex", alignItems: "center", justifyContent: "center", background: "var(--bg)" }}>
+        <span className="spinner" style={{ width: 32, height: 32 }} />
+      </div>
+    );
+  }
+
+  // ── Auth screen ──
+  if (auth === false && !profile) {
+    return <AuthScreen onAuth={handleAuth} onGuest={handleGuest} />;
+  }
+
   // ── If no profile, show onboarding ──
   if (!profile) {
     return <Onboarding onComplete={handleOnboardingComplete} />;
@@ -239,6 +342,7 @@ export default function App() {
 
   const isCapture = screen === "garden-scan" || screen === "health-check";
   const captureMode = screen === "garden-scan" ? "garden" : "health";
+  const isLoggedIn = auth !== false;
 
   return (
     <div className="app">
@@ -251,6 +355,16 @@ export default function App() {
           <p className="tagline">Your AI garden advisor</p>
           <div className="header-right">
             <span className="header-location">📍 {profile.location}</span>
+            {isLoggedIn && (
+              <button
+                className="btn-history"
+                onClick={() => setShowHistory(true)}
+                aria-label="View saved searches"
+                title="Saved searches"
+              >
+                🕑
+              </button>
+            )}
             <button
               className={`btn-text-toggle ${textLarge ? "active" : ""}`}
               onClick={toggleTextSize}
@@ -261,11 +375,11 @@ export default function App() {
             </button>
             <button
               className="btn-settings"
-              onClick={handleSettings}
-              aria-label="Settings — reset your garden profile"
-              title="Settings"
+              onClick={isLoggedIn ? handleLogout : handleSettings}
+              aria-label={isLoggedIn ? "Sign out" : "Settings — reset your garden profile"}
+              title={isLoggedIn ? `Signed in as ${(auth as AuthState).user.email}` : "Settings"}
             >
-              ⚙️
+              {isLoggedIn ? "👤" : "⚙️"}
             </button>
           </div>
         </div>
@@ -354,10 +468,23 @@ export default function App() {
                   </div>
                 </div>
               )}
+
+              {isLoggedIn && (
+                <button className="btn-my-plan" onClick={() => setShowPlan(true)}>
+                  🌿 My Garden Plan
+                  <span className="btn-my-plan-sub">View plants you want to buy &amp; grow</span>
+                </button>
+              )}
+
+              {!isLoggedIn && (
+                <button className="btn-sign-in-prompt" onClick={() => setAuth(false)}>
+                  Sign in to save your searches across devices
+                </button>
+              )}
             </div>
           )}
 
-          {/* ── Capture Screen (shared for garden-scan and health-check) ── */}
+          {/* ── Capture Screen ── */}
           {isCapture && (
             <div className="capture-section">
               <div className="capture-header">
@@ -449,20 +576,20 @@ export default function App() {
           )}
 
           {/* ── Results ── */}
-          {screen === "garden-result" && gardenAnalysis && imagePreview && (
+          {screen === "garden-result" && gardenAnalysis && (
             <GardenAnalysis
               analysis={gardenAnalysis}
-              imagePreview={imagePreview}
+              imagePreview={imagePreview ?? ""}
               profile={profile}
               onBack={() => setScreen("home")}
               onHealthCheck={() => { resetCapture(); setScreen("health-check"); }}
             />
           )}
 
-          {screen === "health-result" && diagnosis && imagePreview && (
+          {screen === "health-result" && diagnosis && (
             <DiagnosisResult
               diagnosis={diagnosis}
-              imagePreview={imagePreview}
+              imagePreview={imagePreview ?? ""}
               onReset={() => setScreen("home")}
             />
           )}
@@ -478,10 +605,13 @@ export default function App() {
               </div>
             ) : suggestions ? (
               <PlantSuggestions
-                suggestions={suggestions}
+                suggestions={suggestions.plants}
+                shops={suggestions.shops}
                 profile={profile}
+                token={isLoggedIn ? (auth as AuthState).token : null}
                 onBack={() => setScreen("home")}
                 onAddPreference={handleAddPreference}
+                onOpenPlan={() => setShowPlan(true)}
               />
             ) : null
           )}
@@ -497,6 +627,35 @@ export default function App() {
         <CameraCapture
           onCapture={(file) => { handleFile(file); }}
           onClose={() => setCameraOpen(false)}
+        />
+      )}
+
+      {showPlan && isLoggedIn && (
+        <GardenPlanPanel
+          token={(auth as AuthState).token}
+          location={profile.location}
+          onClose={() => setShowPlan(false)}
+        />
+      )}
+
+      {showHistory && isLoggedIn && (
+        <HistoryPanel
+          token={(auth as AuthState).token}
+          onClose={() => setShowHistory(false)}
+          onRestoreGarden={(analysis) => {
+            setGardenAnalysis(analysis);
+            setImagePreview(null);
+            setScreen("garden-result");
+          }}
+          onRestoreHealth={(diag) => {
+            setDiagnosis(diag);
+            setImagePreview(null);
+            setScreen("health-result");
+          }}
+          onRestoreSuggestions={(data) => {
+            setSuggestions(data);
+            setScreen("suggestions");
+          }}
         />
       )}
     </div>

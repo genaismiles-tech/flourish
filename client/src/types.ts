@@ -1,6 +1,46 @@
 export type GardenType = 'backyard' | 'front-yard' | 'balcony' | 'indoor' | 'mixed';
 export type ExperienceLevel = 'beginner' | 'intermediate' | 'expert';
 
+export interface AuthUser {
+  id: number;
+  email: string;
+}
+
+export interface AuthState {
+  token: string;
+  user: AuthUser;
+}
+
+export interface PriceEstimate {
+  retailerType: string;
+  examples?: string;
+  priceRange: string;
+  sizes: string[];
+  availability: string;
+  notes: string;
+  badge?: string;
+}
+
+export interface PlantPriceResponse {
+  prices: PriceEstimate[];
+  localShopEstimates: Array<{ shopName: string; priceRange: string; notes: string }>;
+  seasonalTip: string;
+  bestTimeToBuy: string;
+}
+
+export interface PlanItem {
+  id: number;
+  plant_name: string;
+  plant_emoji: string;
+  plant_category: string | null;
+  nursery_name: string | null;
+  nursery_type: string | null;
+  price_estimate: string | null;
+  status: 'planned' | 'purchased' | 'planted';
+  notes: string | null;
+  created_at: string;
+}
+
 export interface UserProfile {
   location: string;
   latitude?: number;
@@ -73,6 +113,21 @@ export interface PlantSuggestion {
   reason: string;
   careLevel: 'easy' | 'moderate' | 'advanced';
   category: string;
+}
+
+export interface ShopRecommendation {
+  name: string;
+  type: string;
+  description: string;
+  address?: string;
+  distance?: string;
+  url?: string;
+  phone?: string;
+}
+
+export interface SuggestionsResponse {
+  plants: PlantSuggestion[];
+  shops: ShopRecommendation[];
 }
 
 export interface Issue {
